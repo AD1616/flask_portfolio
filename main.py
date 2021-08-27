@@ -35,5 +35,3 @@ def stub():
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
-
-print("Hello World")
