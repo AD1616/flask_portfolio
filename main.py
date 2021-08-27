@@ -35,6 +35,9 @@ def stub():
 def Sahil():
     return render_template("Sahil.html")
 
+@app.route('/Lucas mmm/')
+def Lucas():
+    return render_template("Lucas mmm.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
