@@ -31,6 +31,8 @@ def Journals():
     return render_template("Journals.html")
 
 
+
+
 @app.route('/miniLab', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
