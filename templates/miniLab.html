@@ -1,5 +1,6 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
+{% set Journal0 = "https://www.youtube.com/playlist?list=PLpaNhImcjow2iDo2fn_kIAYBLARIUirRm" %}
 
 <!- This variable sets name of browser tab  -->
 {% set project = "miniLab" %}
@@ -20,6 +21,9 @@
         </div>
         <div class="col-12">
             <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
+        </div>
+        <div class="col-3">
+            <a href="{{ Journal0 }}" class="btn">Journal0</a>
         </div>
     </div>
 {% endblock %}
