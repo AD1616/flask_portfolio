@@ -31,6 +31,8 @@ def Journals():
     return render_template("Journals.html")
 
 
+
+
 @app.route('/miniLab', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
@@ -41,6 +43,9 @@ def greet():
     # starting and empty input default
     return render_template("miniLab.html", name="World")
 
+@app.route('/about/')
+def about():
+    return render_template("about.html")
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
