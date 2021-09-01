@@ -26,6 +26,10 @@ def walruses():
 def hawkers():
     return render_template("hawkers.html")
 
+@app.route('/Journals/')
+def Journals():
+    return render_template("Journals.html")
+
 
 @app.route('/miniLab', methods=['GET', 'POST'])
 def greet():
