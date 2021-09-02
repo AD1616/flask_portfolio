@@ -9,13 +9,12 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href="/miniLab">miniLab</a>
-            <a class="nav-link" href="/about">about</a>
             <li><a class="nav-link" href={{ url_for('index') }}>Portfolio</a></li>
             <li><a class="nav-link" href={{ url_for('kangaroos') }}>Kangaroos</a></li>
             <li><a class="nav-link" href={{ url_for('walruses') }}>Walruses</a></li>
             <li><a class="nav-link" href={{ url_for('hawkers') }}>Hawkers</a></li>
             <li><a class="nav-link" href="/miniLab">miniLab</a></li>
+            <a class="nav-link" href="/Journals">Journals</a>
             <li><a class="nav-link" href="/about">about</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
@@ -30,16 +29,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             </ul>
         </div>
     </div>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            miniLab
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown"
-            <a class="dropdown-item" href="/miniLab">miniLab</a>
-        </div>
-    </li>
-            <a class="nav-link" href="/Journals">Journals</a>
-
         </div>
     </div>
 </nav>
