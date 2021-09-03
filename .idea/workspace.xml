@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-    </list>
+    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +48,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+      <option name="SDK_HOME" value="C:\Users\sahil\AppData\Local\Programs\Python\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -226,11 +224,14 @@
     <MESSAGE value="removed hello world" />
     <MESSAGE value="Fixed greet" />
     <MESSAGE value="Changed greet to minilab" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed greet to minilab" />
+    <MESSAGE value="Changed dropdown to greet" />
+    <MESSAGE value="Changed dropdown to minlab" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1630621138140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1630352684122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1630096910700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1630526029562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1630700862099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
