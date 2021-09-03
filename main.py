@@ -45,6 +45,16 @@ def Isaac():
     # starting and empty input default
     return render_template("Isaac.html", name="World")
 
+@app.route('/Sahil', methods=['GET', 'POST'])
+def Sahil():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("Sahil.html", name=name)
+    # starting and empty input default
+    return render_template("Sahil.html", name="World")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
