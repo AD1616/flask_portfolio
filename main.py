@@ -31,31 +31,19 @@ def Journals():
     return render_template("Journals.html")
 
 
-
-
-@app.route('/miniLab', methods=['GET', 'POST'])
-def greet():
-    # submit button has been pushed
-    if request.form:
-        name = request.form.get("name")
-        if len(name) != 0:  # input field has content
-            return render_template("miniLab.html", name=name)
-    # starting and empty input default
-    return render_template("miniLab.html", name="World")
-
 @app.route('/about/')
 def about():
     return render_template("about.html")
 
-@app.route('/IsaacGreet', methods=['GET', 'POST'])
-def IsaacGreet():
+@app.route('/Isaac', methods=['GET', 'POST'])
+def Isaac():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("IsaacGreet.html", name=name)
+            return render_template("Isaac.html", name=name)
     # starting and empty input default
-    return render_template("IsaacGreet.html", name="World")
+    return render_template("Isaac.html", name="World")
 
 @app.route('/Sahil', methods=['GET', 'POST'])
 def Sahil():
