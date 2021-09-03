@@ -45,6 +45,16 @@ def Isaac():
     # starting and empty input default
     return render_template("Isaac.html", name="World")
 
+@app.route('/Erik', methods=['GET', 'POST'])
+def Erik():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("Erik.html", name=name)
+    # starting and empty input default
+    return render_template("Erik.html", name="World")
+
 @app.route('/Sahil', methods=['GET', 'POST'])
 def Sahil():
     # submit button has been pushed
