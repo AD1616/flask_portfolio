@@ -2,7 +2,7 @@
 {% extends "layouts/base.html" %}
 
 <!- This variable sets name of browser tab  -->
-{% set project = "IsaacGreet" %}
+{% set project = "Isaac" %}
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
@@ -12,7 +12,7 @@
             <p>Hello, {{name}}!</p>
         </div>
         <div class="col-12">
-            <form action="/IsaacGreet" id="IsaacGreet" method="POST" >
+            <form action="/Isaac" id="Isaac" method="POST" >
                 <label for="name">Type a greeting name?</label>
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
