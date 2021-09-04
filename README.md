@@ -4,14 +4,22 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 #### Our Project is going to be the Ultimate Rice Guide which is going to be a Website all about Rice.
 #### This will include different Rice types as well as different facts about Rice. This includes recipes and food combinations.
 
-####PBL Individual:
-####Sahil: 4/4
-####Erik: 4/4
-####Isaac: 4/4
-####Yash: 4/4
+## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
-####PBL Team:
-####Sahil: 4/4
-####Erik: 4/4
-####Isaac: 4/4
-####Yash: 4/4
+# PBL 1-2 Table of Contents
+## Peer Review Grading
+### PBL(Team):
+#### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1): The scrum master has defined all tasks on the scrum board, designer has started creating a wire frame, and technical lead has helped coordinate a brain write where we discussed our animations
+#### - GitHub Assets: Navigators have started testing any new additions, developers have started work on dropdown menu, and other developers have integrated [Journal0](https://github.com/AD1616/flask_portfolio/blob/main/templates/Journals.html) to a separate page, and finally develops have integrated greet into individual minilab pages: [Sahil](https://github.com/AD1616/flask_portfolio/blob/main/templates/Sahil.html), [Erik](https://github.com/AD1616/flask_portfolio/blob/main/templates/Erik.html), [Yash](https://github.com/AD1616/flask_portfolio/blob/main/templates/Yash.html), [Isaac](https://github.com/AD1616/flask_portfolio/blob/main/templates/Isaac.html)
+#### - [TPT Points](https://padlet.com/amv7668/5dauht31raq9w168) (see Group #8 on the Padlet): The group has created a visual proof-of-concept in the padlet during the TPT and explained the basic idea of the project. We later decided to change our idea and did another brainwrite [here](https://docs.google.com/drawings/d/1blPXDeaPubER-gAHyGBngrtxeN-vLiY5WKN-2aqO8-Q/edit).
+
+### PBL(Individual):
+Each name has a link to their mini-lab page.
+- [Sahil](https://github.com/AD1616/flask_portfolio/blob/main/templates/Sahil.html) 4/4 points individual, 4/4 points team - I have mainly been working on the mini-lab items, assigning issues, and helping my team with specific tasks. I have made important additions and fixes to the Journal page and dropdown page, and my commits for each respectively are [here](https://github.com/AD1616/flask_portfolio/commit/55f7ab62bd6fa7e2cdab29feb407838dd06abb80) and [here](https://github.com/AD1616/flask_portfolio/commit/1dbb6497b39e8ef272502aef5fa81c4924bee206). Here are my [video notes](https://docs.google.com/document/d/178ia2aVmz9SylZjKJ1U_9Ar68pC0fhWnWqQP9Yjk910/edit) for the collegeboard videos. My personal work/computer plan is to always bring and use my own laptop with all the proper utilities and tools installed.
+- [Erik](https://github.com/AD1616/flask_portfolio/blob/main/templates/Erik.html) 4/4 points individual, 4/4 points team - Erik was assigned to develop the page for the Journal along with Sahil, and he successfully integrated it; his work towards it is shown [here](https://github.com/AD1616/flask_portfolio/commit/0e6a5e15e312003aa29cbca04c2f202f80e65880). Erik also successfully integrated greet into his individual minilab page and provided valuable ideas during our brainwrites. He assisted other members of the team when they needed help, for example with the dropdown. Erik's [video notes](ERIK INSERT YOUR VIDEO NOTES HERE).
+- [Yash](https://github.com/AD1616/flask_portfolio/blob/main/templates/Yash.html) 4/4 points individual, 4/4 points team- Yash has been working on the [navbar dropdown menu](https://github.com/AD1616/flask_portfolio/blob/main/templates/layouts/navbar.html). He has been assisted by all members of the team in making this as it was something that was tough for us, and most of us have evidence of work on the dropdown shown in [commits](https://github.com/AD1616/flask_portfolio/commits/main); however, Yash laid out the main framework and worked out the kinks, and part of his work for the dropdown is shown [here](https://github.com/AD1616/flask_portfolio/commit/5a6200b314f22b150ad6f2cac530888f5b5192d1). Here are Yash's [video notes](YASH PUT YOUR VIDEO NOTES HERE). Yash has also successfully integrated greet into his individual minilab page and extensively troubleshot the dropdown.
+- [Isaac](https://github.com/AD1616/flask_portfolio/blob/main/templates/Isaac.html) 4/4 points individual, 4/4 points team.- Isaac has worked on making the [about me](https://github.com/AD1616/flask_portfolio/blob/main/templates/about.html) page. His commits to make fixes and adjustments are shown extensively in the github [commits](https://github.com/AD1616/flask_portfolio/commits/main) section, and [here](https://github.com/AD1616/flask_portfolio/commit/7bc8001b626c0d76dc7c630535a43649da43591c) is the basic framework that he originally made. Isaac has also thought of [theme pages](ISAAC LINK EVIDENCE FOR THIS HERE) for our website. Here are Isaac's [video notes](ISAAC PUT VIDEO NOTES HERE). Isaac has  successfully integrated greet into his individual minilab page and has played a major role in deciding the design of our website.
+
+
+### Project Ideation
+- We have planned to stick with [this](https://docs.google.com/drawings/d/1blPXDeaPubER-gAHyGBngrtxeN-vLiY5WKN-2aqO8-Q/edit) idea for now.
