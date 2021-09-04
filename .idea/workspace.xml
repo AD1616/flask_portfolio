@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Summarized PBL 1,2 requirements and individual progress in README.">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Fixes to README" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630714874127</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixes to README">
+      <created>1630715347895</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1630715347895</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +250,8 @@
     <MESSAGE value="Fix" />
     <MESSAGE value="Added scores to readme" />
     <MESSAGE value="Summarized PBL 1,2 requirements and individual progress in README." />
-    <option name="LAST_COMMIT_MESSAGE" value="Summarized PBL 1,2 requirements and individual progress in README." />
+    <MESSAGE value="Fixes to README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes to README" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1630352684122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

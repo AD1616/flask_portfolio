@@ -9,7 +9,7 @@ Runtime link: https://portfolio.nighthawkcodingsociety.com/
 # PBL 1-2 Table of Contents
 ## Peer Review Grading
 ### PBL(Team):
-#### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1): The scrum master has defined all tasks on the scrum board, designer has started creating a wire frame, and technical lead has helped coordinate a brain write where we discussed our animations
+#### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1): The scrum master has defined all tasks on the scrum board, designer has been working on a wire frame, and the technical lead has  coordinated two brainwrites where we discussed website ideas.
 #### - GitHub Assets: Navigators have started testing any new additions, developers have started work on dropdown menu, and other developers have integrated [Journal0](https://github.com/AD1616/flask_portfolio/blob/main/templates/Journals.html) to a separate page, and finally develops have integrated greet into individual minilab pages: [Sahil](https://github.com/AD1616/flask_portfolio/blob/main/templates/Sahil.html), [Erik](https://github.com/AD1616/flask_portfolio/blob/main/templates/Erik.html), [Yash](https://github.com/AD1616/flask_portfolio/blob/main/templates/Yash.html), [Isaac](https://github.com/AD1616/flask_portfolio/blob/main/templates/Isaac.html)
 #### - [TPT Points](https://padlet.com/amv7668/5dauht31raq9w168) (see Group #8 on the Padlet): The group has created a visual proof-of-concept in the padlet during the TPT and explained the basic idea of the project. We later decided to change our idea and did another brainwrite [here](https://docs.google.com/drawings/d/1blPXDeaPubER-gAHyGBngrtxeN-vLiY5WKN-2aqO8-Q/edit).
 
