@@ -39,6 +39,10 @@ def about():
 def brainWrite():
     return render_template("brainWrite.html")
 
+@app.route('/wireframes/')
+def wireframes():
+    return render_template("wireframes.html")
+
 @app.route('/Isaac', methods=['GET', 'POST'])
 def Isaac():
     # submit button has been pushed
