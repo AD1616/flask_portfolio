@@ -35,6 +35,10 @@ def Journals():
 def about():
     return render_template("about.html")
 
+@app.route('/brainWrite/')
+def brainWrite():
+    return render_template("brainWrite.html")
+
 @app.route('/Isaac', methods=['GET', 'POST'])
 def Isaac():
     # submit button has been pushed
