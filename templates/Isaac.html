@@ -6,14 +6,14 @@
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!- Try building a new body here ->
+    <body background ="https://images.unsplash.com/photo-1549586073-f4c3b7ff044a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGlnZW9uJTIwZmx5aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
         <div class="col-12">
             <p>Hello, {{name}}!</p>
         </div>
         <div class="col-12">
             <form action="/Isaac" id="Isaac" method="POST" >
-                <label for="name">Type a greeting name?</label>
+                <label for="name">Hey, I'm Isaac. What about you?</label>
                 <input name="name" id="name">
                 <input type="submit" value="Greetings!">
             </form>
