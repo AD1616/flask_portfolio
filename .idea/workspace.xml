@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Changed name of MiniLabs section to &quot;Concepts/MiniLabs&quot;">
-      <change afterPath="$PROJECT_DIR$/templates/brainWrite.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1xHNnYqAA5ZDPzgy0auePXjAssd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -53,7 +60,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\sahil\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -90,6 +97,9 @@
       <workItem from="1630715438584" duration="333000" />
       <workItem from="1631038626824" duration="17000" />
       <workItem from="1631045713147" duration="1251000" />
+      <workItem from="1631075416337" duration="544000" />
+      <workItem from="1631118973109" duration="78000" />
+      <workItem from="1631128062376" duration="346000" />
     </task>
     <task id="LOCAL-00001" summary="removed hello world">
       <created>1630095964773</created>
@@ -266,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631047896148</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changed dropdown item name">
+      <created>1631075685451</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631075685451</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,11 +318,14 @@
     <MESSAGE value="Changed font color on about.html" />
     <MESSAGE value="Changed name on dropdown" />
     <MESSAGE value="Changed name of MiniLabs section to &quot;Concepts/MiniLabs&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed name of MiniLabs section to &quot;Concepts/MiniLabs&quot;" />
+    <MESSAGE value="Changed dropdown item name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed dropdown item name" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631128405420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IdeaProjects2$Unnamed.coverage" NAME="Python 3.9 Coverage Results" MODIFIED="1631049379676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IdeaProjects2$main.coverage" NAME="main Coverage Results" MODIFIED="1631049471666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1630352684122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1630526029562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631049206010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
