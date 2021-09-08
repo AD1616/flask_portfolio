@@ -1,9 +1,15 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
+{% set Journal0 = "https://docs.google.com/drawings/d/1blPXDeaPubER-gAHyGBngrtxeN-vLiY5WKN-2aqO8-Q/edit" %}
 
 <!- This variable sets name of browser tab  -->
 {% set project = "brainWrite" %}
 
+{% block body %}
+    <div class="col-3">
+        <a href="{{ Journal0 }}" class="btn">Brain Write</a>
+    </div>
+{% endblock %}
 
 <!- This is turning off birds background from base.html -->
 {% block background %}
