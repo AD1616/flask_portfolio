@@ -7,15 +7,11 @@
     <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Added binary">
       <change afterPath="$PROJECT_DIR$/static/bulb_off.png.url" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/bulb_on.gif.url" afterDir="false" />
-    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Isaac Personal PIGEON">
-      <change afterPath="$PROJECT_DIR$/static/FlyingPigeon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/pigeon.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Isaac.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Isaac.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +23,6 @@
       <list>
         <option value="HTML File" />
         <option value="Python Script" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -64,6 +59,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sahil\OneDrive\Documents\GitHub\flask_portfolio\static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="flask_portfolio" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +71,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\sahil\AppData\Local\Programs\Python\Python39\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -112,6 +112,7 @@
       <workItem from="1631118973109" duration="78000" />
       <workItem from="1631128062376" duration="593000" />
       <workItem from="1631139177045" duration="659000" />
+      <workItem from="1631215878802" duration="1184000" />
     </task>
     <task id="LOCAL-00001" summary="removed hello world">
       <created>1630095964773</created>
@@ -302,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631128665138</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added binary">
+      <created>1631216041304</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631216041304</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,13 +347,14 @@
     <MESSAGE value="Changed dropdown item name" />
     <MESSAGE value="Changed name of MiniLabs section to &quot;Concepts/MiniLabs&quot;" />
     <MESSAGE value="Changed background to grey" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed background to grey" />
+    <MESSAGE value="Added binary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added binary" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631218156252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IdeaProjects2$Unnamed.coverage" NAME="Python 3.9 Coverage Results" MODIFIED="1631049379676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IdeaProjects2$main.coverage" NAME="main Coverage Results" MODIFIED="1631049471666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631128720546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1630352684122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631139828795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631049206010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
