@@ -4,9 +4,16 @@
 <!- This variable sets name of browser tab  -->
 {% set project = "Isaac" %}
 
-<!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <body background ="https://images.unsplash.com/photo-1549586073-f4c3b7ff044a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGlnZW9uJTIwZmx5aW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+<body>
+    <style>
+        body {
+            background-image: url('/static/FlyingPigeon.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
     <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
         <div class="col-12">
             <p>Hello, {{name}}!</p>
