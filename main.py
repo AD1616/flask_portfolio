@@ -43,6 +43,10 @@ def brainWrite():
 def wireframes():
     return render_template("wireframes.html")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
+
 @app.route('/Isaac', methods=['GET', 'POST'])
 def Isaac():
     # submit button has been pushed
