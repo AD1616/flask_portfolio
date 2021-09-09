@@ -6,23 +6,31 @@
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!- Try building a new body here ->
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
-        <div class="col-12">
-            <p>Hello, {{name}}!</p>
-        </div>
-        <div class="col-12">
-            <form action="/Erik" id="Erik" method="POST" >
-                <label for="name">Type a greeting name?</label>
-                <input name="name" id="name">
-                <input type="submit" value="Greetings!">
-            </form>
-        </div>
-        <div class="col-12">
-            <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
-        </div>
-
+<body>
+<style>
+    body {
+        background-image: url('/static/Dog.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+<div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+    <div class="col-12">
+        <p>Hello, {{name}}!</p>
     </div>
+    <div class="col-12">
+        <form action="/Erik" id="Erik" method="POST" >
+            <label for="name">Hey, I'm Erik. What about you?</label>
+            <input name="name" id="name">
+            <input type="submit" value="Greetings!">
+        </form>
+    </div>
+    <div class="col-12">
+        <p style="font-family: Calibri; color: #ffffff; class=" display-2">I will be bringing my own personal Laptop</p>
+    </div>
+
+</div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
