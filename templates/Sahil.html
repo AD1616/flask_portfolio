@@ -6,8 +6,16 @@
 
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
+    <style>
+        body {
+            background-image: url('/static/background.JPG');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 200%;
+        }
+    </style>
     <!- Try building a new body here ->
-    <div class="center-block" style="margin: 2% 5% 5%; text-align:left; font-family: gilroy,serif;">
+    <div class="center-block" style="margin: 2% 5% 5%;color: white ; text-align:left; font-family: gilroy,serif;">
         <div class="col-12">
             <p>Hello, {{name}}!</p>
         </div>
