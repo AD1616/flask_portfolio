@@ -3,6 +3,9 @@
 ### - Team name: pigeon_chest
 ### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1)
 ### - [GitHub repo contributors](https://github.com/AD1616/flask_portfolio/graphs/contributors)
+### - [Pairs and Journals for Isaac and Sahil Pair:](https://docs.google.com/document/d/1-79zrF_rkQSlD2ayyWv9OEqQAF3kZPOUrr91CwQUH5s/edit)
+### - [Pairs and Journals for Erik and Yash Pair:](https://docs.google.com/document/d/1iP8-gWius5-_VajB1pgc2nL83-qHCgv0LH-0-uFj4pI/edit?usp=sharing) 
+### - [Team Folder for Journals](https://drive.google.com/drive/u/1/folders/1Ef22BumexkHp9CETCwlkl3Qrow32QriU)
 ## Individual details
 ### Erik Peterson
 #### - Github ID: Maboinjd
