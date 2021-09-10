@@ -8,7 +8,7 @@
 ### - [Team Folder for Journals](https://drive.google.com/drive/u/1/folders/1Ef22BumexkHp9CETCwlkl3Qrow32QriU)
 ## Individual details
 
-| Name | Github Profile | Issues | Scrum Board | Commit History |
+| Name | Github Profile | Tasks | Scrum Board | Commit History |
 | - | - | - | - | - |
 | Erik Peterson | [@MaBoinjd](https://github.com/MaBoinjd) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
 | Sahil Samar | [@AD1616](https://github.com/AD1616) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
