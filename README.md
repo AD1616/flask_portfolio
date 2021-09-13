@@ -1,4 +1,12 @@
-#Pop Quiz
+# PBL 3-4 Week 3
+## Links to issues for this week
+### - [Individual Research](https://github.com/AD1616/flask_portfolio/issues/13)
+### - [Individual Coding. Includes home pages](https://github.com/AD1616/flask_portfolio/issues/12)
+### - [Shows location for Mini-labs/Concepts, Brain Write, Wireframes, Greet, and TPT3](https://github.com/AD1616/flask_portfolio/issues/11)
+### - [Shows the prototype of our layout, with our own style](https://github.com/AD1616/flask_portfolio/issues/10)
+#### We still want to have our layout more personalized, along with our individual home pages, but we are satisfied with our progress for this week. A lot of our time was spent on learning how to get images into our projects and create backgrounds. 
+
+# Pop Quiz
 ## Position Contributors Data
 ### - Team name: pigeon_chest
 ### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1)
@@ -8,14 +16,12 @@
 ### - [Team Folder for Journals](https://drive.google.com/drive/u/1/folders/1Ef22BumexkHp9CETCwlkl3Qrow32QriU)
 ## Individual details
 
-| Name | Github Profile | Issues | Scrum Board | Commit History |
+| Name | Github Profile | Tasks | Scrum Board | Commit History |
 | - | - | - | - | - |
 | Erik Peterson | [@MaBoinjd](https://github.com/MaBoinjd) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
 | Sahil Samar | [@AD1616](https://github.com/AD1616) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
 | Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
-
-
 
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
