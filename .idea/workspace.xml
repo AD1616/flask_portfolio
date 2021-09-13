@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="Added binary">
-      <change afterPath="$PROJECT_DIR$/static/Mr-krabs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Websit-e.jpeg" afterDir="false" />
+    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Yash.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Yash.html" afterDir="false" />
     </list>
@@ -114,6 +112,7 @@
       <workItem from="1631139177045" duration="659000" />
       <workItem from="1631215878802" duration="1184000" />
       <workItem from="1631293814218" duration="1052000" />
+      <workItem from="1631559993412" duration="1396000" />
     </task>
     <task id="LOCAL-00001" summary="removed hello world">
       <created>1630095964773</created>
@@ -353,7 +352,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="added background to Yash.HTMl" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631294716590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/IdeaProjects2$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631561443213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IdeaProjects2$Unnamed.coverage" NAME="Python 3.9 Coverage Results" MODIFIED="1631049379676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/IdeaProjects2$main.coverage" NAME="main Coverage Results" MODIFIED="1631049471666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main_py_.coverage" NAME="Flask (main.py) Coverage Results" MODIFIED="1630352684122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
