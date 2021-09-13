@@ -1,6 +1,6 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
-
+{% set Journal0 = "https://docs.google.com/drawings/d/1-_v8fkqGUladLTBoUgpYbQT4ppUXkDTO8UXLzncF-WM/edit" %}
 <!- This variable sets name of browser tab  -->
 {% set project = "Sahil" %}
 
@@ -28,6 +28,9 @@
         </div>
         <div class="col-12">
             <img src="/static/assets/PythonFlask.jpeg" style="height: 400px" >
+        </div>
+        <div class="col-sm">
+            <a href="{{ Journal0 }}" class="btn">Personal wireframe</a>
         </div>
 
     </div>
