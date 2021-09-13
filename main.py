@@ -47,6 +47,10 @@ def wireframes():
 def binary():
     return render_template("binary.html")
 
+@app.route('/tpt/')
+def tpt():
+    return render_template("tpt.html")
+
 @app.route('/Isaac', methods=['GET', 'POST'])
 def Isaac():
     # submit button has been pushed
