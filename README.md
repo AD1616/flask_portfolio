@@ -1,4 +1,4 @@
-#PBL 3-4 Week 3
+# PBL 3-4 Week 3
 ## Links to issues for this week
 ### - [Individual Research](https://github.com/AD1616/flask_portfolio/issues/13)
 ### - [Individual Coding. Includes home pages](https://github.com/AD1616/flask_portfolio/issues/12)
@@ -6,7 +6,7 @@
 ### - [Shows the prototype of our layout, with our own style](https://github.com/AD1616/flask_portfolio/issues/10)
 #### We still want to have our layout more personalized, along with our individual home pages, but we are satisfied with our progress for this week. A lot of our time was spent on learning how to get images into our projecs and create backgrounds. 
 
-#Pop Quiz
+# Pop Quiz
 ## Position Contributors Data
 ### - Team name: pigeon_chest
 ### - [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1)
