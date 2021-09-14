@@ -8,7 +8,7 @@ app = Flask(__name__)
 # connects default URL to render index.html
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("Home Page/index.html")
 
 
 # connects /kangaroos path to render kangaroos.html
