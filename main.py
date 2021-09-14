@@ -51,6 +51,10 @@ def binary():
 def tpt():
     return render_template("tpt.html")
 
+@app.route('/riceTypes/')
+def ricetypes():
+    return render_template("riceTypes.html")
+
 @app.route('/Isaac', methods=['GET', 'POST'])
 def Isaac():
     # submit button has been pushed
