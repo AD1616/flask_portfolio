@@ -1,0 +1,63 @@
+{% extends "layouts/base.html" %}
+{% set Journal0 = "https://docs.google.com/drawings/d/1-ohIxvq5Q8XuaZxKGwjp4loVQkUf3HMt5p6ulrTQGek/edit" %}
+{% set overview = "https://docs.google.com/drawings/d/1iUHZpTsHxTqLAXmsw7_yFhUrIjG1LG6v8OYxuNUdkGA/edit" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "riceTypes" %}
+
+{% block body %}
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Forbidden Rice
+                <img src="../static/Forbidden Rice.JPG" />
+            </div>
+        </div>
+        <div class="col-sm">
+
+        </div>
+
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Brown Rice
+                <img src="../static/Rice Types.JPG" />
+            </div>
+        </div>
+        <div class="col-sm">
+
+        </div>
+
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Jasmine Rice
+                <img src="../static/Forbidden Rice.JPG" />
+            </div>
+        </div>
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Sticky Rice
+                <img src="../static/Forbidden Rice.JPG" height="300" width="300"/>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Parboiled Rice
+                <img src="../static/Forbidden Rice.JPG" height="300" width="300"/>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div style = "position:relative; left:0px; top:85px;">
+                Basmati Rice
+                <img src="../static/Forbidden Rice.JPG" height="300" width="300"/>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
