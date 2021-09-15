@@ -3,33 +3,23 @@
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Portfolio" %}
-{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
-{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
+{% set repo = "https://github.com/AD1616/flask_portfolio" %}
 
-<body>
+{% block body %}
+    <style>
+        body {
+            background-image: url('/static/ForbiddenRice.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
     <div class="container">
 
-        <h1>SVG Animated Birds</h1>
-
-        <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
-        </div>
-
-        <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-        </div>
-
-        <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-        </div>
-
-        <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
-        </div>
-
+        <h1>Pigeon Chest Project</h1>
+        <a href="{{ repo }}" class="btn">GitHub</a>
     </div>
-
-</body>
+{% endblock %}
 
 {% block background %}
 {% endblock %}
