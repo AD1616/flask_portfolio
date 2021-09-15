@@ -1,0 +1,22 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+{% set Journal0 = "https://www.youtube.com/playlist?list=PLpaNhImcjow2iDo2fn_kIAYBLARIUirRm" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Home" %}
+{% set repo = "https://github.com/AD1616/flask_portfolio" %}
+
+{% block body %}
+<style>
+    body {
+        background-image: url('/static/ForbiddenRice.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
