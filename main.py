@@ -43,9 +43,13 @@ def brainWrite():
 def wireframes():
     return render_template("wireframes.html")
 
-@app.route('/binary/')
+@app.route('/binary/', methods=['GET', 'POST'])
 def binary():
-    return render_template("binary.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("BITS")
+    # starting and empty input default
+    return render_template("binary.html", BITS="BITS")
 
 @app.route('/tpt/')
 def tpt():
