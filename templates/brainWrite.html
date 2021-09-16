@@ -6,17 +6,21 @@
 {% set project = "brainWrite" %}
 
 {% block body %}
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            Brain Write
-            <img src="/static/Brain Write.JPG" alt = "Brain Write">
+<body>
+    <font color = "#000000">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    Brain Write
+                    <img src="/static/Brain Write.JPG" alt = "Brain Write">
+                </div>
+                <div class="col-sm">
+                    <a href="{{ Journal0 }}" class="btn">Brain Write</a>
+                </div>
+            </div>
         </div>
-        <div class="col-sm">
-            <a href="{{ Journal0 }}" class="btn">Brain Write</a>
-        </div>
-    </div>
-</div>
+    </font>
+</body>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
