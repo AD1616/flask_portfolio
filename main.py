@@ -101,7 +101,7 @@ def Yash():
     # starting and empty input default
     return render_template("Yash.html", name="World")
 
-@app.route('/rgb', methods=["GET", "POST"])
+@app.route('/rgb/')
 def rgb():
     return render_template("rgb.html", images=image_data())
 
