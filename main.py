@@ -44,7 +44,7 @@ def brainWrite():
 def wireframes():
     return render_template("wireframes.html")
 
-@app.route("/binary", methods=['GET','POST'])
+@app.route("/binary/", methods=['GET','POST'])
 def binary():
     if request.form:
         bits = request.form.get("bits")
