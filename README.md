@@ -1,4 +1,4 @@
-# PBL 3,4 week 4
+# PBL 3,4 Week 4
 ## Links to issues for this week
 ### - [Javascript changing the DOM (Links to an external site.) with HTML DOM event onclick](https://github.com/AD1616/flask_portfolio/issues/17)
 ### - [Template Design Doc](https://github.com/AD1616/flask_portfolio/issues/18)
