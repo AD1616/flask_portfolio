@@ -1,12 +1,11 @@
 <!-- Extending the project layout, as this file will do minor customizations -->
+<!--
 {% extends "layouts/base.html" %}
-
+-->
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Portfolio" %}
 {% set repo = "https://github.com/AD1616/flask_portfolio" %}
-
-{% block body %}
-    <div class="container">
+<div class="container">
 
         <h1>Pigeon Chest Project</h1>
         <div class="row" style="padding: 10%; padding-top: 0%; padding-bottom: 5%;">
@@ -15,7 +14,14 @@
             </div>
         </div>
     </div>
+{% block body %}
+<!--
+<link rel="stylesheet" type="text/css" href="../stylesheets/birds.css" media="screen" />
+-->
+
 {% endblock %}
 
+<!--
 {% block background %}
 {% endblock %}
+-->

@@ -1,6 +1,5 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
-from algorithm.image import image_data
 
 # create a Flask instance
 app = Flask(__name__)
@@ -41,11 +40,6 @@ def about():
 @app.route('/brainWrite/')
 def brainWrite():
     return render_template("brainWrite.html")
-
-
-@app.route('/wireframes/')
-def wireframes():
-    return render_template("wireframes.html")
 
 
 @app.route("/binary/", methods=['GET', 'POST'])
