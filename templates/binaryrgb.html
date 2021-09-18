@@ -1,56 +1,57 @@
 {% extends "layouts/base.html" %}
+
 {% block body %}
+<body style = "background-color: lightgrey;">
+<font color = "black">
+    <h1>Binary with RGB</h1>
+    <p>Turn the switches on and off in order to change the color! First column changes shades of red, second column changes shades of green, third column changes shades of blue.</p>
 
-<h1>Binary with RGB</h1>
-<p>Turn the switches on and off in order to change the color!</p>
+    <br />
 
-<br />
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
+        {% endfor %}
 
-<div class="row">
-    <div class="col-sm-1"></div>
-    {% for i in range(1, 9) %}
-    <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
-    {% endfor %}
-
-    <div class="offset-sm-1 col-sm-2">
-        <p id="r">Decimal value: 0</p>
+        <div class="offset-sm-1 col-sm-2">
+            <p id="r">Decimal: 0</p>
+        </div>
     </div>
-</div>
 
-<br />
+    <br />
 
-<div class="row">
-    <div class="col-sm-1"></div>
-    {% for i in range(1, 9) %}
-    <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
-    {% endfor %}
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
+        {% endfor %}
 
-    <div class="offset-sm-1 col-sm-2">
-        <p id="g">Decimal value: 0</p>
+        <div class="offset-sm-1 col-sm-2">
+            <p id="g">Decimal: 0</p>
+        </div>
     </div>
-</div>
 
-<br />
+    <br />
 
-<div class="row">
-    <div class="col-sm-1"></div>
-    {% for i in range(1, 9) %}
-    <button class="col-sm-1" id="b{{i}}" onclick="toggleSwitch('b{{i}}')">0</button>
-    {% endfor %}
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="b{{i}}" onclick="toggleSwitch('b{{i}}')">0</button>
+        {% endfor %}
 
-    <div class="offset-sm-1 col-sm-2">
-        <p id="b">Decimal value: 0</p>
+        <div class="offset-sm-1 col-sm-2">
+            <p id="b">Decimal: 0</p>
+        </div>
     </div>
-</div>
 
-<br />
+    <br />
 
-<div class="offset-sm-1 col-sm-10" id="color" style="background-color: #000000; height: 20vh;">
-</div>
-<p style="text-align: center;" id="code">Hexcode: #000000</p>
+    <div class="offset-sm-1 col-sm-10" id="color" style="background-color: #000000; height: 20vh;">
+    </div>
+    <p style="text-align: center;" id="code">Hexcode: #000000</p>
 
-<br />
-<button style="justify-content: center;" onclick="reset()">Reset</button>
+    <br />
 
 
 <script>
