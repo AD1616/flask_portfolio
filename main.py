@@ -27,6 +27,7 @@ def walruses():
 def hawkers():
     return render_template("hawkers.html")
 
+
 @app.route('/Journals/')
 def Journals():
     return render_template("Journals.html")
@@ -36,15 +37,18 @@ def Journals():
 def about():
     return render_template("about.html")
 
+
 @app.route('/brainWrite/')
 def brainWrite():
     return render_template("brainWrite.html")
+
 
 @app.route('/wireframes/')
 def wireframes():
     return render_template("wireframes.html")
 
-@app.route("/binary/", methods=['GET','POST'])
+
+@app.route("/binary/", methods=['GET', 'POST'])
 def binary():
     if request.form:
         bits = request.form.get("bits")
@@ -53,16 +57,19 @@ def binary():
         # starting and empty input default
     return render_template("binary.html", bits=8)
 
+
 @app.route('/tpt/')
 def tpt():
     return render_template("tpt.html")
+
 
 @app.route('/riceTypes/')
 def ricetypes():
     return render_template("riceTypes.html")
 
+
 @app.route('/Isaac', methods=['GET', 'POST'])
-def Isaac():
+def isaac():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
@@ -71,8 +78,9 @@ def Isaac():
     # starting and empty input default
     return render_template("Isaac.html", name="World")
 
+
 @app.route('/Erik', methods=['GET', 'POST'])
-def Erik():
+def erik():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
@@ -81,8 +89,9 @@ def Erik():
     # starting and empty input default
     return render_template("Erik.html", name="World")
 
+
 @app.route('/Sahil', methods=['GET', 'POST'])
-def Sahil():
+def sahil():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
@@ -91,8 +100,9 @@ def Sahil():
     # starting and empty input default
     return render_template("Sahil.html", name="World")
 
+
 @app.route('/Yash', methods=['GET', 'POST'])
-def Yash():
+def yash():
     # submit button has been pushed
     if request.form:
         name = request.form.get("name")
@@ -101,13 +111,16 @@ def Yash():
     # starting and empty input default
     return render_template("Yash.html", name="World")
 
-@app.route('/rgb/')
+
+@app.route('/rgb/', methods=["GET", "POST"])
 def rgb():
     return render_template("rgb.html", images=image_data())
+
 
 @app.route('/binaryrgb/')
 def binaryrgb():
     return render_template("binaryrgb.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
