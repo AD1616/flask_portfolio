@@ -1,4 +1,19 @@
-# PBL 3-4 Week 3
+# PBL 3,4 week 4
+## Links to issues for this week
+### - [Javascript changing the DOM (Links to an external site.) with HTML DOM event onclick](https://github.com/AD1616/flask_portfolio/issues/17)
+### - [Template Design Doc](https://github.com/AD1616/flask_portfolio/issues/18)
+### - [Additional Technicals](https://github.com/AD1616/flask_portfolio/issues/19)
+## [Video of runtime and overview of team contributions](https://www.youtube.com/watch?v=dhwl5lAhLcQ)
+#### We spent a lot of time this week working on the binary. We worked together to change the image, add an input box, and add ASCII. We later added an additional page to show RGB with the binary. We also spent a lot of time working on CSS. We changed the default background and tried to keep a theme going that matched our project. We also changed up fonts and added some animations to buttons. Finally, we worked on some organization by combining the wireframe and brainwrite pages. 
+## Self Grade for this week
+### - Planning: 1/1
+### - Team Technicals: 2/2
+### - Individual Technicals: 2/2
+
+
+
+
+# PBL 3,4 Week 3
 ## Links to issues for this week
 ### - [Individual Research](https://github.com/AD1616/flask_portfolio/issues/13)
 ### - [Individual Coding. Includes home pages](https://github.com/AD1616/flask_portfolio/issues/12)
