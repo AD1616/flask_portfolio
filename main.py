@@ -1,5 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
+from algorithm.image import image_data
 
 # create a Flask instance
 app = Flask(__name__)
@@ -99,6 +100,14 @@ def Yash():
             return render_template("Yash.html", name=name)
     # starting and empty input default
     return render_template("Yash.html", name="World")
+
+@app.route('/rgb/')
+def rgb():
+    return render_template("rgb.html", images=image_data())
+
+@app.route('/binaryrgb/')
+def binaryrgb():
+    return render_template("binaryrgb.html")
 
 # runs the application on the development server
 if __name__ == "__main__":
