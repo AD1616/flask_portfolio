@@ -1,6 +1,8 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 {% set Journal0 = "https://docs.google.com/document/d/1Q3nanvqXZMJskCUd3dfQewO-kT5RpT8gmFCfZ_CEu4M/edit" %}
+{% set Journal1 = "https://docs.google.com/drawings/d/1-ohIxvq5Q8XuaZxKGwjp4loVQkUf3HMt5p6ulrTQGek/edit" %}
+{% set overview = "https://docs.google.com/drawings/d/1iUHZpTsHxTqLAXmsw7_yFhUrIjG1LG6v8OYxuNUdkGA/edit" %}
 
 <!- This variable sets name of browser tab  -->
 {% set project = "brainWrite" %}
@@ -13,9 +15,19 @@
                 <div class="col-sm">
                     Brain Write
                     <img src="/static/Brain Write.JPG" alt = "Brain Write">
+                    <a href="{{ Journal0 }}" class="btn">Brain Write</a>
                 </div>
                 <div class="col-sm">
-                    <a href="{{ Journal0 }}" class="btn">Brain Write</a>
+                <a href="{{ Journal1 }}" class="btn">Wireframe1</a>
+                <div style = "position:relative; left:0px; top:85px;">
+                    Rice Facts
+                    <img src="../static/Rice Facts.JPG" height="450" width="484"/>
+                </div>
+                <div class="col-sm">
+                    <a href="{{ overview }}" class="btn">Wireframe2</a>
+                    <div style = "position:relative; left:0px; top:85px;">
+                        Rice Types
+                        <img src="../static/Rice Types.JPG" height="450" width="484"/></div>
                 </div>
             </div>
         </div>
