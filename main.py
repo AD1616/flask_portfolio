@@ -1,6 +1,5 @@
 # import "packages" from flask
 from flask import Flask, render_template, request
-from algorithm.image import image_data
 
 # create a Flask instance
 app = Flask(__name__)
