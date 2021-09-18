@@ -43,11 +43,6 @@ def brainWrite():
     return render_template("brainWrite.html")
 
 
-@app.route('/wireframes/')
-def wireframes():
-    return render_template("wireframes.html")
-
-
 @app.route("/binary/", methods=['GET', 'POST'])
 def binary():
     if request.form:

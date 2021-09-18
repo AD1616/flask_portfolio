@@ -8,31 +8,65 @@
 {% set project = "brainWrite" %}
 
 {% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 600px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
 <body>
-    <font color = "#000000">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    Brain Write
-                    <img src="/static/Brain Write.JPG" alt = "Brain Write">
-                    <a href="{{ Journal0 }}" class="btn">Brain Write</a>
-                </div>
-                <div class="col-sm">
-                <a href="{{ Journal1 }}" class="btn">Wireframe1</a>
-                <div style = "position:relative; left:0px; top:85px;">
-                    Rice Facts
-                    <img src="../static/Rice Facts.JPG" height="450" width="484"/>
-                </div>
-                <div class="col-sm">
-                    <a href="{{ overview }}" class="btn">Wireframe2</a>
-                    <div style = "position:relative; left:0px; top:85px;">
-                        Rice Types
-                        <img src="../static/Rice Types.JPG" height="450" width="484"/></div>
-                </div>
-            </div>
+<font color="black">
+    <h2>Planning</h2>
+</font>
+<div class="row">
+    <div class="column" style="background-color:#bbb;">
+        <h2>Brain Write</h2>
+        <div style = "position:relative; left:-10px; top:240px;">
+            <a href="{{ Journal0 }}" class="btn">Brain Write</a>
         </div>
-    </font>
+        <p>
+            <img src="../static/Brain Write.JPG" height="240" width="480"/>
+        </p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h2>Wire Frame 1</h2>
+        <div style = "position:relative; left:-10px; top:450px;">
+            <a href="{{ Journal1 }}" class="btn">Wireframe1</a>
+        </div>
+        <p>
+            <img src="../static/Rice Facts.JPG" height="450" width="484"/>
+        </p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h2>Wire Frame 2</h2>
+        <div style = "position:relative; left:-10px; top:450px;">
+            <a href="{{ overview }}" class="btn">Wireframe2</a>
+        </div>
+        <p>
+            <img src="../static/Rice Types.JPG" height="450" width="484"/>
+        </p>
+    </div>
+</div>
+
 </body>
+</html>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
