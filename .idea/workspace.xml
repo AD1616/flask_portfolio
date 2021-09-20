@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="fixed home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Home Page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Home Page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Home Page/index2.html" beforeDir="false" />
+    <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rgb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rgb.html" afterDir="false" />
     </list>
@@ -53,7 +57,6 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -146,6 +149,7 @@
       <workItem from="1631850567423" duration="492000" />
       <workItem from="1631851391391" duration="142000" />
       <workItem from="1631909355238" duration="1022000" />
+      <workItem from="1631946215383" duration="238000" />
       <workItem from="1632007076677" duration="976000" />
       <workItem from="1632013156360" duration="5000" />
       <workItem from="1632013955646" duration="117000" />
@@ -368,6 +372,22 @@
       <updated>1631953509236</updated>
     </task>
     <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00031" summary="deleted line three from main.py">
+      <created>1631944581744</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1631944581744</updated>
+    </task>
+    <task id="LOCAL-00032" summary="IDK">
+      <created>1631945938867</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1631945938867</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +429,10 @@
     <MESSAGE value="Tried to fix binary. Still have issue: manually have to change bits in main.py for value to change, input box gives error" />
     <MESSAGE value="tried to fix rgb but not working" />
     <MESSAGE value="tried to add more rgb" />
+    <option name="LAST_COMMIT_MESSAGE" value="tried to add more rgb" />
+    <MESSAGE value="deleted line three from main.py" />
+    <MESSAGE value="IDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDK" />
     <MESSAGE value="fixed home page" />
     <option name="LAST_COMMIT_MESSAGE" value="fixed home page" />
   </component>
