@@ -11,7 +11,7 @@
 ### - Planning: 1/1
 ### - Team Technicals: 2/2
 ### - Individual Technicals: 2/2 for everyone (Erik, Yash, Sahil, Isaac)
-### - Overall: 5/5 
+
 | Name/Github Username | Overall Score | Tasks | Scrum Board | Commit History |
 | - | - | - | - | - |
 | Erik Peterson/MaBoinjd | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
