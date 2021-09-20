@@ -3,14 +3,21 @@
 ### - [Javascript changing the DOM (Links to an external site.) with HTML DOM event onclick](https://github.com/AD1616/flask_portfolio/issues/17)
 ### - [Template Design Doc](https://github.com/AD1616/flask_portfolio/issues/18)
 ### - [Additional Technicals](https://github.com/AD1616/flask_portfolio/issues/19)
+### - [TT3 Binary Hack Suggestions](https://github.com/AD1616/flask_portfolio/issues/23)
+### - [Designs Page and About Page work](https://github.com/AD1616/flask_portfolio/issues/24)
 ## [Video of runtime and overview of team contributions](https://www.youtube.com/watch?v=dhwl5lAhLcQ)
-#### We spent a lot of time this week working on the binary. We worked together to change the image, add an input box, and add ASCII. We later added an additional page to show RGB with the binary. We also spent a lot of time working on CSS. We changed the default background and tried to keep a theme going that matched our project. We also changed up fonts and added some animations to buttons. Finally, we worked on some organization by combining the wireframe and brainwrite pages. 
+#### We spent a lot of time this week working on the binary. We worked together to change the image, add an input box, and add ASCII. We later added an additional page to show RGB with the binary. We also spent a lot of time working on CSS. We changed the default background and tried to keep a theme going that matched our project. We also changed up fonts and added some animations to buttons. Finally, we worked on some organization by combining the wireframe and brainwrite pages. Everyone had many commits this week, as shown in our tangibles under issues. Yash had a bit less than everyone else because his computer was not working, but he was able to make a commit after he got it working and changed the default background; he also added pictures to our about page. Erik worked on the binary lab and made some commits, commited a preliminary home page, and combined our brainwrite and wireframe pages using bootstrap grid. Isaac worked a lot on the CSS and animations and made many commits. I(Sahil) made many commits on the binary lab and added an RGB section. Again, all these commits are linked as tangibles under specific issues.
 ## Self Grade for this week
 ### - Planning: 1/1
 ### - Team Technicals: 2/2
-### - Individual Technicals: 2/2
-### - Overall: 5/5
+### - Individual Technicals: 2/2 for everyone (Erik, Yash, Sahil, Isaac)
 
+| Name/Github Username | Overall Score | Tasks | Scrum Board | Commit History |
+| - | - | - | - | - |
+| Erik Peterson/MaBoinjd | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
+| Sahil Samar/AD1616 | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
+| Isaac Le/Isaac-Le | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
+| Yash Shah/YashShah138 | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
 
 
 # PBL 3,4 Week 3
