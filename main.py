@@ -48,9 +48,9 @@ def binary():
     if request.form:
         bits = request.form.get("bits")
         if len(bits) != 0:  # input field has content
-            return render_template("binary.html", bits=int(bits), pic1= "pic1", pic2 = "pic2")
+            return render_template("binary.html", bits=int(bits), pic1= "../static/Forbidden.PNG", pic2 = "../static/BasmatiRice.PNG")
         # starting and empty input default
-    return render_template("binary.html", bits=8, pic1="../static/Forbidden.png", pic2="../static/BasmatiRice.png")
+    return render_template("binary.html", bits=8, pic1="../static/Forbidden.PNG", pic2="../static/BasmatiRice.PNG")
 
 
 @app.route('/tpt/')
