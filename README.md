@@ -1,3 +1,10 @@
+| Name | Github Profile | Tasks | Scrum Board | Commit History |
+| - | - | - | - | - |
+| Erik Peterson | [@MaBoinjd](https://github.com/MaBoinjd) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
+| Sahil Samar | [@AD1616](https://github.com/AD1616) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
+| Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
+| Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
+
 # PBL 3,4 Week 4
 ## Links to issues for this week
 ### - [Javascript changing the DOM (Links to an external site.) with HTML DOM event onclick](https://github.com/AD1616/flask_portfolio/issues/17)
@@ -11,13 +18,7 @@
 ### - Planning: 1/1
 ### - Team Technicals: 2/2
 ### - Individual Technicals: 2/2 for everyone (Erik, Yash, Sahil, Isaac)
-
-| Name/Github Username | Overall Score | Tasks | Scrum Board | Commit History |
-| - | - | - | - | - |
-| Erik Peterson/MaBoinjd | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/MaBoinjd) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Amaboinjd) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=MaBoinjd) |
-| Sahil Samar/AD1616 | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
-| Isaac Le/Isaac-Le | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
-| Yash Shah/YashShah138 | 5/5 | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
+### - Overall score: 5/5
 
 
 # PBL 3,4 Week 3
