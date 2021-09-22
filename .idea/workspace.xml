@@ -6,7 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="23453fb0-2e7b-49aa-826e-a5f1d7180dde" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/binaryrgb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binaryrgb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Basmati Rice.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Basmati Rice.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/BasmatiRice.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/BasmatiRice.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Brown Rice.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Brown Rice.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Forbidden Rice.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Forbidden Rice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Forbidden Rice.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Forbidden.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Forbidden.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ForbiddenRice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/ForbiddenRice.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Jasmine Rice.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Jasmine Rice.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Parboiled Rice.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Parboiled Rice.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Rice Facts.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Rice Facts.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Rice Types.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Rice Types.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Sticky Rice.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/RiceTypes/Sticky Rice.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Journals.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Journals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/brainWrite.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/brainWrite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/riceTypes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/riceTypes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/RiceTypes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,6 +71,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/RiceTypes" />
       <recent name="C:\Users\sahil\IdeaProjects\flask_portfolio_improve\static" />
       <recent name="$PROJECT_DIR$/static" />
     </key>
@@ -152,7 +168,8 @@
       <workItem from="1632007076677" duration="976000" />
       <workItem from="1632013156360" duration="5000" />
       <workItem from="1632013955646" duration="117000" />
-      <workItem from="1632247063704" duration="959000" />
+      <workItem from="1632247063704" duration="3185000" />
+      <workItem from="1632337657404" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="removed hello world">
       <created>1630095964773</created>
@@ -378,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632247646518</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Corrected the mistake on the Binary RGB&#10;Column to ROW">
+      <created>1632248123584</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1632248123584</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +421,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed hello world" />
     <MESSAGE value="Fixed greet" />
     <MESSAGE value="Changed greet to minilab" />
     <MESSAGE value="Changed dropdown to greet" />
@@ -422,10 +445,11 @@
     <MESSAGE value="tried to add more rgb" />
     <MESSAGE value="fixed home page" />
     <MESSAGE value="Changed format and font color on the rice types page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed format and font color on the rice types page" />
+    <MESSAGE value="Corrected the mistake on the Binary RGB&#10;Column to ROW" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the mistake on the Binary RGB&#10;Column to ROW" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio_yash$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1632247735824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio_yash$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1632340549387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/flask_portfolio_yash$main.coverage" NAME="main Coverage Results" MODIFIED="1632167467704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
