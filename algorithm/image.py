@@ -17,7 +17,7 @@ def image_formatter(img, img_type):
 
 
 # color_data prepares a series of images for data analysis
-def image_data(path="static/", img_list=None):  # path of static images is defaulted
+def image_data(path="static/RiceTypes/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "jessicagavin.com", 'label': "Forbidden Rice", 'file': "Forbidden.PNG"},
