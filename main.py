@@ -54,9 +54,30 @@ def binary():
     return render_template("binary.html", bits=8, pic1="../static/RiceTypes/Forbidden.PNG", pic2="../static/RiceTypes/BasmatiRice.PNG")
 
 
-@app.route('/tpt/')
+@app.route('/tpt/', methods=['GET', 'POST'])
 def tpt():
-    return render_template("tpt.html")
+    # submit button has been pushed
+    var1 = request.form.get("var1")
+    var2 = request.form.get("var2")
+    var3 = request.form.get("var3")
+    var4 = request.form.get("var4")
+    var5 = request.form.get("var5")
+    var6 = request.form.get("var6")
+    if var1 is not None:
+        average = ((int(var1) + 3) + (int(var2) + 3) + (int(var3) + 3) + (int(var4) + 3) + (int(var5) + 3) + (int(var6) + 3)) / 6
+    else:
+        average = 'nothing'
+    list1 = [var1, var2, var3, var4, var5, var6]
+
+    def orderlist(list):
+        list3 = []
+        while len(list) > 0:
+            smallest = min(list)
+            list3.append(smallest)
+            list.remove(smallest)
+    list3 = orderlist(list1)
+
+    return render_template("tpt.html", var1=var1, var2=var2, var3=var3, var4=var4, var5=var5, var6=var6, average=average, list3=list3)
 
 
 @app.route('/riceTypes/')
