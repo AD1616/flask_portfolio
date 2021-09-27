@@ -27,6 +27,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
             {'source': "jessicagavin.com", 'label': "Brown Rice", 'file': "Brown Rice.JPG"},
             {'source': "jessicagavin.com", 'label': "Jasmine Rice", 'file': "Jasmine Rice.JPG"},
         ]
+
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
@@ -62,14 +63,25 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
                 img_dict['gray_data'].append((average, average, average))
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
+        img_dict['hex_array_GRAY'] = []
+        img_dict['binary_array_GRAY'] = []
+        # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
+        for pixel in img_dict['gray_data']:
+            # hexadecimal conversions
+            hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
+            hex_value = hex_value.replace("x", "0")
+            img_dict['hex_array_GRAY'].append("#" + hex_value)
+            # binary conversions
+            bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
+            img_dict['binary_array_GRAY'].append(bin_value)
     return img_list  # list is returned with all the attributes for each image dictionary
 
 
-# run this as standalone tester to see data printed in terminal
+# # run this as standalone tester to see data printed in terminal
 # if __name__ == "__main__":
 #     local_path = "../static/img/"
 #     img_test = [
-#         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
+#         {'source': "idk who this is lol", 'label': "Chinese person", 'file': "chinese.png"}
 #     ]
 #     items = image_data(local_path, img_test)  # path of local run
 #     for row in items:
