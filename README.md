@@ -7,7 +7,7 @@
 
 # Sprint 5,6 Week 6
 ## Links to issues for this week
-### - https://github.com/AD1616/flask_portfolio/issues/29
+### - [RGB Mini lab](https://github.com/AD1616/flask_portfolio/issues/29)
 #### - Sahil is working on grayscale this week. Yash is working on writing a message on top of image. Erik is working on corrections in code and journal entries, and making function to be more efficient. Isaac is working on manipulating images. 
 
 
