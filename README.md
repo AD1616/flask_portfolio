@@ -6,7 +6,10 @@
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
 
 # Sprint 5,6 Week 5
-
+## Links to issues for this week
+### - [3.1 and 3.2 work](https://github.com/AD1616/flask_portfolio/issues/27)
+### - [OO and TO work](https://github.com/AD1616/flask_portfolio/issues/26)
+### - [Week 5 challenges work](https://github.com/AD1616/flask_portfolio/issues/31)
 
 # PBL 3,4 Week 4
 ## Links to issues for this week
