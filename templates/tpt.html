@@ -7,10 +7,10 @@
 
 {% block body %}
     <div class="container row">
-        <div class="col-sm-3">
+        <div class="col-sm">
             <a href="{{ Journal0 }}" class="btn">TPT3 Notes</a>
         </div>
-        <div class="col-sm-3" style="text-align: center; padding-top: 0">
+        <div class="col-sm" style="text-align: center; padding-top: 0">
             <h4> +3 Average Algorithm </h4>
             <form action="/tpt/" method="post">
                 <label for="var1">First Variable:</label>
@@ -28,13 +28,10 @@
                 <input type="submit" value="Submit">
             </form>
 
-        <div class="col-sm-3">
+        <div class="col-sm">
             <p>The average of {{ var1 }}+3, {{ var2 }}+3, {{ var3 }}+3, {{ var4 }}+3, {{ var5 }}+3, and {{ var6 }}+3 is {{ average }}.</p>
         </div>
 
-        <div class="col-sm-3">
-            <p>The ordered list is {{ list3 }}.</p>
-        </div>
 
     </div>
 
