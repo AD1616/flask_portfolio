@@ -67,17 +67,8 @@ def tpt():
         average = ((int(var1) + 3) + (int(var2) + 3) + (int(var3) + 3) + (int(var4) + 3) + (int(var5) + 3) + (int(var6) + 3)) / 6
     else:
         average = 'nothing'
-    list1 = [var1, var2, var3, var4, var5, var6]
 
-    def orderlist(list):
-        list3 = []
-        while len(list) > 0:
-            smallest = min(list)
-            list3.append(smallest)
-            list.remove(smallest)
-    list3 = orderlist(list1)
-
-    return render_template("tpt.html", var1=var1, var2=var2, var3=var3, var4=var4, var5=var5, var6=var6, average=average, list3=list3)
+    return render_template("tpt.html", var1=var1, var2=var2, var3=var3, var4=var4, var5=var5, var6=var6, average=average)
 
 
 @app.route('/riceTypes/')
