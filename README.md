@@ -5,6 +5,14 @@
 | Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
 
+# Sprint 5,6 Week 6
+## Links to issues for this week
+### - https://github.com/AD1616/flask_portfolio/issues/29
+#### - Sahil is working on grayscale this week. Yash is working on writing a message on top of image. Erik is working on corrections in code and journal entries, and making function to be more efficient. Isaac is working on manipulating images. 
+
+
+
+
 # Sprint 5,6 Week 5
 ## Links to issues for this week
 ### - [3.1 and 3.2 work](https://github.com/AD1616/flask_portfolio/issues/27)
