@@ -15,7 +15,7 @@
 | Erik | Erik is working on corrections in code and journal entries, and making function to be more efficient. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/40) |
 | Isaac | Isaac is working on manipulating images. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/39) |
 | Yash |Yash is working on writing a message on top of image. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/41) |
-#### We will work on Logic gates if we finish our minilab work early. [Documentation](https://github.com/AD1616/flask_portfolio/issues/43) and [research](https://github.com/AD1616/flask_portfolio/issues/42)we will work together on.
+#### We will work on Logic gates if we finish our minilab work early. [Documentation](https://github.com/AD1616/flask_portfolio/issues/43) and [research](https://github.com/AD1616/flask_portfolio/issues/42) we will work together on.
 
 
 
