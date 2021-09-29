@@ -8,7 +8,14 @@
 # Sprint 5,6 Week 6
 ## Links to issues for this week
 ### - [RGB Mini lab](https://github.com/AD1616/flask_portfolio/issues/29)
-#### Sahil is working on grayscale this week. Yash is working on writing a message on top of image. Erik is working on corrections in code and journal entries, and making function to be more efficient. Isaac is working on manipulating images. We will work on Logic gates if we finish our minilab work early.
+#### We will work on Logic gates if we finish our minilab work early.
+#### 
+| Member | Job | Ticket |
+| - | - | - |
+| Sahil | Sahil is working on grayscale this week. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
+| Erik | Erik is working on corrections in code and journal entries, and making function to be more efficient. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
+| Isaac | Isaac is working on manipulating images. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
+| Yash |Yash is working on writing a message on top of image. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
 
 
 
