@@ -12,10 +12,10 @@
 #### 
 | Member | Job | Ticket |
 | - | - | - |
-| Sahil | Sahil is working on grayscale this week. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
-| Erik | Erik is working on corrections in code and journal entries, and making function to be more efficient. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
-| Isaac | Isaac is working on manipulating images. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
-| Yash |Yash is working on writing a message on top of image. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/29) |
+| Sahil | Sahil is working on grayscale this week. | [Ticket]https://github.com/AD1616/flask_portfolio/issues/38) |
+| Erik | Erik is working on corrections in code and journal entries, and making function to be more efficient. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/40) |
+| Isaac | Isaac is working on manipulating images. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/39) |
+| Yash |Yash is working on writing a message on top of image. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/41) |
 
 
 
