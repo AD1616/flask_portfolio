@@ -18,6 +18,7 @@
 ### - [3.1 and 3.2 work](https://github.com/AD1616/flask_portfolio/issues/27)
 ### - [OO and TO work](https://github.com/AD1616/flask_portfolio/issues/26)
 ### - [Week 5 challenges work](https://github.com/AD1616/flask_portfolio/issues/31)
+#### This week, we all worked together on the notes and OO and TO work. We figured out the challenges individually, and then worked together on one machine to implement them into our website. We did our collegeboard quizzes inidivudally, and Yash completed corrections for his quiz while the rest of us got 100%.
 
 # PBL 3,4 Week 4
 ## Links to issues for this week
