@@ -9,7 +9,7 @@
 
 # Sprint 5,6 Week 6
 ## Links to issues for this week
-### - [RGB Mini lab](https://github.com/AD1616/flask_portfolio/issues/29)
+### - [RGB Mini lab (Specific tasks on here as check boxes, but also listed as separate tickets on the scrum board)](https://github.com/AD1616/flask_portfolio/issues/29)
 #### 
 | Member | Job | Ticket |
 | - | - | - |

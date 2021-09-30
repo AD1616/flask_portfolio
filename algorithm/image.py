@@ -4,6 +4,16 @@ import base64
 from io import BytesIO
 
 
+filename = input("File name?") or "/static/FlyingPigeon.jpg"
+img = Image.open(filename)
+img.show()
+
+for x in range(img.size[0]):
+    for y in range(img.size[1]):
+        r, g, b = img.getpixel((x, y))
+        img.putpixel((x, y), (b, g, r))
+
+img.show()
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
     with BytesIO() as buffer:
