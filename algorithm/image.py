@@ -31,25 +31,28 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "jessicagavin.com", 'label': "Forbidden Rice", 'file': "Forbidden.PNG"},
-            {'source': "jessicagavin.com", 'label': "Parboiled Rice", 'file': "Parboiled Rice.JPG"},
-            {'source': "jessicagavin.com", 'label': "Sticky Rice", 'file': "Sticky Rice.JPG"},
+            {'source': "jessicagavin.com", 'label': "Parboiled Rice", 'file': "parboiledRice.JPG"},
+            {'source': "jessicagavin.com", 'label': "Sticky Rice", 'file': "stickyRice.JPG"},
             {'source': "jessicagavin.com", 'label': "Basmati Rice", 'file': "BasmatiRice.PNG"},
-            {'source': "jessicagavin.com", 'label': "Brown Rice", 'file': "Brown Rice.JPG"},
-            {'source': "jessicagavin.com", 'label': "Jasmine Rice", 'file': "Jasmine Rice.JPG"},
+            {'source': "jessicagavin.com", 'label': "Brown Rice", 'file': "brownRice.JPG"},
+            {'source': "jessicagavin.com", 'label': "Jasmine Rice", 'file': "jasmineRice.jpg"},
         ]
 
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
+        print(file)
         # Python Image Library operations
-        img_ref = Image.open(file)  # PIL
-        img_reference = ImageDraw.Draw(img_ref)
-        img_reference.text((0, 0), "Yash sucks", (255,255,255))
+        img_reference = Image.open(file)  # PIL
+        draw_reference = ImageDraw.Draw(img_reference)
+        draw_reference.text((0, 0), "Yash sucks",(127,127,127))
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
         img_dict['size'] = img_reference.size
+
+
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         img_dict['base64'] = image_formatter(img_reference, img_dict['format'])
         # Numpy is used to allow easy access to data of image, python list

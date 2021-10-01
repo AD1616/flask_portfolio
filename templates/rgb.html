@@ -130,8 +130,8 @@
                                         <tr>
                                             <td>{{loop.index}}</td>
                                             <td>{{row}}</td>
-                                            <td>{{image.hex_array_GRAY[loop.index - 1]}}</td>
-                                            <td>{{image.binary_array_GRAY[loop.index - 1]}}
+                                            <td>{{image.gray_hex_array[loop.index - 1]}}</td>
+                                            <td>{{image.gray_binary_array[loop.index - 1]}}
                                         </tr>
                                         {% if loop.index > 256 %}
                                             <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>
