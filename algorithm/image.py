@@ -46,7 +46,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         img_ref = Image.open(file)  # PIL
         img_reference = ImageDraw.Draw(img_ref)
         img_reference.text((0, 0), "Yash sucks", (255,255,255))
-        img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
+        img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
         img_dict['size'] = img_reference.size
@@ -58,6 +58,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         img_dict['binary_array'] = []
         img_dict['gray_data'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
+        # The below function was edited with Big O notation to get rid of a for loop to make the code more concise.
         for pixel in img_dict['data']:
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
@@ -67,24 +68,25 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array'].append(bin_value)
             # create gray scale of image, ref: https://www.geeksforgeeks.org/convert-a-numpy-array-to-an-image/
-            average = (pixel[0] + pixel[1] + pixel[2]) // 3
+            grayvalue = (pixel[0] + pixel[1] + pixel[2]) // 3
             if len(pixel) > 3:
-                img_dict['gray_data'].append((average, average, average, pixel[3]))
+                img_dict['gray_data'].append((grayvalue, grayvalue, grayvalue, pixel[3]))
             else:
-                img_dict['gray_data'].append((average, average, average))
+                img_dict['gray_data'].append((grayvalue, grayvalue, grayvalue))
+        # Conversion to Base64
         img_reference.putdata(img_dict['gray_data'])
         img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
-        img_dict['hex_array_GRAY'] = []
-        img_dict['binary_array_GRAY'] = []
+        img_dict['gray_hex_array'] = []
+        img_dict['gray_binary_array'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         for pixel in img_dict['gray_data']:
-            # hexadecimal conversions
+            # conversions for hexadecimal
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
-            img_dict['hex_array_GRAY'].append("#" + hex_value)
-            # binary conversions
+            img_dict['gray_hex_array'].append("#" + hex_value)
+            # conversions for binary
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
-            img_dict['binary_array_GRAY'].append(bin_value)
+            img_dict['gray_binary_array'].append(bin_value)
     return img_list  # list is returned with all the attributes for each image dictionary
 
 

@@ -2,6 +2,7 @@
 {% extends "layouts/base.html" %}
 
 {% block meta %}
+{# Line below uses jquery in order to hide and show images #}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
@@ -10,8 +11,8 @@
     //  document.getElementID("img_gray<n>").innerHTML
     //  help: https://www.geeksforgeeks.org/how-to-change-the-src-attribute-of-an-img-element-in-javascript-jquery/
 
-    var imageType = 0; // 0 is color, 1 is gray
-
+    var imageType = 0; // When this changes to 1, the grayscaled image is shown
+    // This function is called when the toggle colors button is pushed to either hide the colored image and show the grayscaled image or vice versa
     function toggle() {
         if (imageType == 0) {
             $('#colored').hide()
@@ -30,7 +31,9 @@
 {% block body %}
     <h1 class="text-center">RGB values within an Image</h1>
     <div class="container">
-        <button onclick="toggle()">Toggle to Greyscale!</button>
+        {#Button here calls the toggle function#}
+        <button onclick="toggle()">Toggle to Greyscale or switch back to color!</button>
+        {#This class is defining how the page will display the colored images#}
         <div class="row justify-content-md-center" id="colored">
             <table class="table">
                 <thead>
@@ -86,8 +89,8 @@
                 </tbody>
             </table>
 
-        </div> <!-- end color -->
-
+        </div>
+        {#This class is defining how the page will display the grayscaled images#}
         <div class="row justify-content-md-center" id="grayscale">
             <table class="table">
                 <thead>
@@ -143,11 +146,12 @@
                 </tbody>
             </table>
 
-        </div> <!-- end gray -->
+        </div>
     </div>
 
     <script>
-        $( document ).ready(function() {
+    {# The code renders the grayscaled images upon opening the site. As soon as the DOM is safe to manipulate, we are hiding the grayscaled images with .ready so that they only show up if we click the button.#}
+        $(document).ready(function() {
             $('#grayscale').hide()
         });
     </script>
