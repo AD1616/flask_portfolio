@@ -3,17 +3,17 @@ import numpy
 import base64
 from io import BytesIO
 
-
-filename = input("File name?") or "/static/FlyingPigeon.jpg"
-img = Image.open(filename)
-img.show()
-
-for x in range(img.size[0]):
-    for y in range(img.size[1]):
-        r, g, b = img.getpixel((x, y))
-        img.putpixel((x, y), (b, g, r))
-
-img.show()
+#
+# filename = input("File name?") or "/static/FlyingPigeon.jpg"
+# img = Image.open(filename)
+# img.show()
+#
+# for x in range(img.size[0]):
+#     for y in range(img.size[1]):
+#         r, g, b = img.getpixel((x, y))
+#         img.putpixel((x, y), (b, g, r))
+#
+# img.show()
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
 def image_base64(img, img_type):
     with BytesIO() as buffer:
@@ -44,7 +44,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         file = path + img_dict['file']  # file with path for local access (backend)
         # Python Image Library operations
         img_ref = Image.open(file)  # PIL
-        img_reference = ImageDraw.draw(img_ref)
+        img_reference = ImageDraw.Draw(img_ref)
         img_reference.text((0, 0), "Yash sucks", (255,255,255))
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
