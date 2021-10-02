@@ -25,12 +25,29 @@
         }
     }
 </script>
+<script>
+    var imageType = 0;
+
+    function toggle() {
+        if (imageType == 0) {
+            $('#colored').hide()
+            $('#inverse').show()
+            imageType = 1;
+        } else {
+            $('#inverse').hide()
+            $('#colored').show()
+            imageType = 0;
+        }
+    }
+</script>
     <title>RGB starter</title>
 {% endblock %}
 
 {% block body %}
     <h1 class="text-center">RGB values within an Image</h1>
     <div class="container">
+        <div class="row justify-content-md-center" id="colored">
+        <button onclick="toggle()">See Inverse!</button>
         {#Button here calls the toggle function#}
         <button onclick="toggle()">Toggle to Greyscale or switch back to color!</button>
         {#This class is defining how the page will display the colored images#}
@@ -89,8 +106,8 @@
                 </tbody>
             </table>
 
-        </div>
-        {#This class is defining how the page will display the grayscaled images#}
+        </div> <!-- end color -->
+
         <div class="row justify-content-md-center" id="grayscale">
             <table class="table">
                 <thead>
@@ -153,6 +170,72 @@
     {# The code renders the grayscaled images upon opening the site. As soon as the DOM is safe to manipulate, we are hiding the grayscaled images with .ready so that they only show up if we click the button.#}
         $(document).ready(function() {
             $('#grayscale').hide()
+        });
+    </script>
+
+
+<!-- start of Inverse -->
+    <div class="row justify-content-md-center" id="inverse">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Meta Data</th>
+                <th>Image</th>
+                <th>Data</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for image in images %}
+                <tr>
+                    <td>
+                        <div>{{image.file}}</div>
+                        <div>{{image.format}}</div>
+                        <div>{{image.size}}</div>
+                        <div>{{image.label}}</div>
+                        <div>{{image.source}}</div>
+                    </td>
+                    <td>
+                        <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64_INVERSE}}" >
+                        <p hidden id="img_inverse{{loop.index}}">{{image.base64_INVERSE}}</p>
+                    </td>
+                    <td>
+                        <div class="overflow-auto" style="height: 256px">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>{{image.mode}}</th>
+                                    <th>Hex Code</th>
+                                    <th>Binary</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for row in image.gray_data[:256+1] %}
+                                    <tr>
+                                        <td>{{loop.index}}</td>
+                                        <td>{{row}}</td>
+                                        <td>{{image.hex_array_INVERSE[loop.index - 1]}}</td>
+                                        <td>{{image.binary_array_INVERSE[loop.index - 1]}}
+                                    </tr>
+                                    {% if loop.index > 256 %}
+                                        <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>
+                                    {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div> <!-- end inverse -->
+    </div>
+
+    <script>
+        $( document ).ready(function() {
+            $('#inverse').hide()
         });
     </script>
 {% endblock %}

@@ -60,7 +60,24 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         img_dict['hex_array'] = []
         img_dict['binary_array'] = []
         img_dict['gray_data'] = []
+        img_dict['inverse_data'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
+        # RGB Inverse Colors
+        pic = Image.open(file)
+        for x in range(pic.size[0]):
+            for y in range(pic.size[1]):
+                if len(pic.size) > 3:
+                    avg = img_dict['inverse_data'].append(pic.getpixel())/3;
+                    r, g, b = avg.getpixel((x, y))
+                    avg.putpixel((x,y)), (b, g, r)
+                else:
+                    pic = pic.convert('RGB')
+                    r, g, b = pic.getpixel((x, y))
+                    pic.putpixel((x, y), (b, g, r))
+                img_reference.putdata(img_dict['inverse_data'])
+                img_dict['base64_INVERSE'] = image_formatter(img_reference, img_dict['format'])
+                img_dict['hex_array_INVERSE'] = []
+                img_dict['binary_array_INVERSE'] = []
         # The below function was edited with Big O notation to get rid of a for loop to make the code more concise.
         for pixel in img_dict['data']:
             # hexadecimal conversions
