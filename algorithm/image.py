@@ -45,8 +45,6 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         print(file)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
-        draw_reference = ImageDraw.Draw(img_reference)
-        draw_reference.text((0, 0), "Yash sucks",(127,127,127))
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
