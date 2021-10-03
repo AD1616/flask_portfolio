@@ -42,7 +42,6 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
-        print(file)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
         draw_reference = ImageDraw.Draw(img_reference)
@@ -114,7 +113,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
 if __name__ == "__main__":
      local_path = "../static/RiceTypes/"
      img_test = [
-         {'source': "idk who this is lol", 'label': "Forbidden-Rice", 'file': "Forbidden.png"}
+         {'source': "jessicagavin.com", 'label': "Forbidden-Rice", 'file': "Forbidden.png"}
      ]
      items = image_data(local_path, img_test)  # path of local run
      for row in items:
