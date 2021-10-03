@@ -2,6 +2,7 @@ from PIL import Image, ImageDraw
 import numpy
 import base64
 from io import BytesIO
+import PIL.ImageOps
 
 #
 # filename = input("File name?") or "/static/FlyingPigeon.jpg"
@@ -42,16 +43,24 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
+        processing = img_dict['processing']
+        #RGB Inverse Values
+        if processing == "inverted":
+            firstImage = Image.open(file)
+            d1 = ImageDraw.Draw(firstImage)
+            d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
+            firstImage.save("static/RiceTypes/inverted/" + img_dict['file'])
+            invertFile = "static/RiceTypes/inverted/" + img_dict['file']
+            img_reference = Image.open(invertFile)
         # Python Image Library operations
-        img_reference = Image.open(file)  # PIL
+        else:
+            img_reference = Image.open(file)  # PIL
         draw_reference = ImageDraw.Draw(img_reference)
         draw_reference.text((0, 0), "Yash sucks",(127,127,127))
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
         img_dict['size'] = img_reference.size
-
-
         # Conversion of original Image to Base64, a string format that serves HTML nicely
         img_dict['base64'] = image_formatter(img_reference, img_dict['format'])
         # Numpy is used to allow easy access to data of image, python list
@@ -59,30 +68,14 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         img_dict['hex_array'] = []
         img_dict['binary_array'] = []
         img_dict['gray_data'] = []
-        img_dict['inverse_data'] = []
-        # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
-        # RGB Inverse Colors
-        pic = Image.open(file)
-        for x in range(pic.size[0]):
-            for y in range(pic.size[1]):
-                if len(pic.size) > 3:
-                    avg = img_dict['inverse_data'].append(pic.getpixel())/3;
-                    r, g, b = avg.getpixel((x, y))
-                    avg.putpixel((x,y)), (b, g, r)
-                else:
-                    pic = pic.convert('RGB')
-                    r, g, b = pic.getpixel((x, y))
-                    pic.putpixel((x, y), (b, g, r))
-                img_reference.putdata(img_dict['inverse_data'])
-                img_dict['base64_INVERSE'] = image_formatter(img_reference, img_dict['format'])
-                img_dict['hex_array_INVERSE'] = []
-                img_dict['binary_array_INVERSE'] = []
+        # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatte
         # The below function was edited with Big O notation to get rid of a for loop to make the code more concise.
         for pixel in img_dict['data']:
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
-            img_dict['hex_array'].append("#" + hex_value)
+            processing = img_dict['processing']
+            #inverting the Image in RGB
             # binary conversions
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array'].append(bin_value)
