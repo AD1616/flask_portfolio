@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 import numpy
 import base64
 from io import BytesIO
@@ -43,18 +43,18 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
-        processing = img_dict['processing']
+        #processing = img_dict['processing']
         #RGB Inverse Values
-        if processing == "inverted":
-            firstImage = Image.open(file)
-            d1 = ImageDraw.Draw(firstImage)
-            d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
-            firstImage.save("static/RiceTypes/inverted/" + img_dict['file'])
-            invertFile = "static/RiceTypes/inverted/" + img_dict['file']
-            img_reference = Image.open(invertFile)
-        # Python Image Library operations
-        else:
-            img_reference = Image.open(file)  # PIL
+        # if processing == "inverted":
+        #     firstImage = Image.open(file)
+        #     d1 = ImageDraw.Draw(firstImage)
+        #     d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
+        #     firstImage.save("static/RiceTypes/inverted/" + img_dict['file'])
+        #     invertFile = "static/RiceTypes/inverted/" + img_dict['file']
+        #     img_reference = Image.open(invertFile)
+        # # Python Image Library operations
+        # else:
+        img_reference = Image.open(file)  # PIL
         draw_reference = ImageDraw.Draw(img_reference)
         draw_reference.text((0, 0), "Yash sucks",(127,127,127))
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
@@ -74,7 +74,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
-            processing = img_dict['processing']
+            # processing = img_dict['processing']
             #inverting the Image in RGB
             # binary conversions
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
