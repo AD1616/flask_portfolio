@@ -95,7 +95,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
 if __name__ == "__main__":
      local_path = "../static/RiceTypes/"
      img_test = [
-         {'source': "idk who this is lol", 'label': "Forbidden-Rice", 'file': "Forbidden.png"}
+         {'source': "jessicagavin.com", 'label': "Forbidden-Rice", 'file': "Forbidden.png"}
      ]
      items = image_data(local_path, img_test)  # path of local run
      for row in items:
