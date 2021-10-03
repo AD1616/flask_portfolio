@@ -128,10 +128,11 @@
                                     <tbody>
                                     {% for row in image.gray_data[:256+1] %}
                                         <tr>
+                                            {#Populating the grayscale table with the new calculated values for hexcode and binary#}
                                             <td>{{loop.index}}</td>
                                             <td>{{row}}</td>
                                             <td>{{image.gray_hex_array[loop.index - 1]}}</td>
-                                            <td>{{image.gray_binary_array[loop.index - 1]}}
+                                            <td>{{image.gray_binary_array[loop.index - 1]}}</td>
                                         </tr>
                                         {% if loop.index > 256 %}
                                             <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>

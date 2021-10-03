@@ -42,7 +42,6 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
-        print(file)
         # Python Image Library operations
         img_reference = Image.open(file)  # PIL
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
