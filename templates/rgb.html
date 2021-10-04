@@ -126,7 +126,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for row in image.gray_data[:256+1] %}
+                                    {% for row in image.gray_data[:257] %}
                                         <tr>
                                             {#Populating the grayscale table with the new calculated values for hexcode and binary#}
                                             <td>{{loop.index}}</td>
