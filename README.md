@@ -19,7 +19,8 @@
 | Erik | Erik is working on corrections in code and journal entries, and making function to be more efficient. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/41) |
 | Isaac | Isaac is working on manipulating images. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/40) |
 | Yash |Yash is working on writing a message on top of image. | [Ticket](https://github.com/AD1616/flask_portfolio/issues/39) |
-#### We will work on Logic gates if we finish our minilab work early. [Documentation](https://github.com/AD1616/flask_portfolio/issues/43) and [research](https://github.com/AD1616/flask_portfolio/issues/42) we will work together on.
+#### Plan: We will work on Logic gates if we finish our minilab work early. [Documentation](https://github.com/AD1616/flask_portfolio/issues/43) and [research](https://github.com/AD1616/flask_portfolio/issues/42) we will work together on.
+#### Summary: This week, we successfully finished the RGB minilab. Sahil added grayscale, Erik did Big O work, Yash wrote message on top of image, and Isaac added blur. We developed a better understanding for how to integrate python, javascript, and html together through this project. 
 
 
 
