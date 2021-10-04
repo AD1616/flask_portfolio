@@ -90,11 +90,11 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
         img_dict['gray_binary_array'] = []
         # 'data' is a list of RGB data, the list is traversed and hex and binary lists are calculated and formatted
         for pixel in img_dict['gray_data']:
-            # conversions for hexadecimal
+            # conversions for hexadecimal but for the grayscaled image
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
             img_dict['gray_hex_array'].append("#" + hex_value)
-            # conversions for binary
+            # conversions for binary for the grayscaled image
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['gray_binary_array'].append(bin_value)
     return img_list  # list is returned with all the attributes for each image dictionary
