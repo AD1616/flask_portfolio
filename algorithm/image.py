@@ -31,26 +31,29 @@ def image_formatter(img, img_type):
 def image_data(path="static/RiceTypes/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "jessicagavin.com", 'label': "Forbidden Rice", 'file': "Forbidden.PNG"},
-            {'source': "jessicagavin.com", 'label': "Parboiled Rice", 'file': "parboiledRice.JPG"},
-            {'source': "jessicagavin.com", 'label': "Sticky Rice", 'file': "stickyRice.JPG"},
-            {'source': "jessicagavin.com", 'label': "Basmati Rice", 'file': "BasmatiRice.PNG"},
-            {'source': "jessicagavin.com", 'label': "Brown Rice", 'file': "brownRice.JPG"},
-            {'source': "jessicagavin.com", 'label': "Jasmine Rice", 'file': "jasmineRice.jpg"},
+            {'source': "jessicagavin.com", 'label': "Forbidden Rice", 'file': "Forbidden.PNG", 'modification': "none"},
+            {'source': "jessicagavin.com", 'label': "Parboiled Rice", 'file': "parboiledRice.JPG", 'modification': "blur"},
+            {'source': "jessicagavin.com", 'label': "Sticky Rice", 'file': "stickyRice.JPG", 'modification': "none"},
+            {'source': "jessicagavin.com", 'label': "Basmati Rice", 'file': "BasmatiRice.PNG", 'modification': "none"},
+            {'source': "jessicagavin.com", 'label': "Brown Rice", 'file': "brownRice.JPG", 'modification': "none"},
+            {'source': "jessicagavin.com", 'label': "Jasmine Rice", 'file': "jasmineRice.jpg", 'modification': "none"},
         ]
 
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
-        #RGB Inverse Values
-        # firstImage = Image.open(file)
-        # invert = PIL.ImageOps.invert(firstImage)
-        # invert.save("static/RiceTypes/InverseImages/" + img_dict['file'])
-        # invertFile = "static/RiceTypes/InverseImages/" + img_dict['file']
+        modification = img_dict['modification']
+        #RGB Blur
+        if modification == "blur":
+            firstImage = Image.open(file)
+            blurImage = firstImage.filter(ImageFilter.GaussianBlur(10))
+            blurImage.save("static/RiceTypes/BlurredImages/" + img_dict['file'])
+            blurFile = "static/RiceTypes/BlurredImages/" + img_dict['file']
+            img_reference = Image.open(blurFile)
+        else:
+            img_reference = Image.open(file)
         # Python Image Library operations
-        #RGB BLur
-        img_reference = Image.open(file)  # PIL
         draw_reference = ImageDraw.Draw(img_reference)
         draw_reference.text((0, 0), "Yash sucks",(127,127,127))
         img_data = Image.Image.getdata(img_reference)  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
