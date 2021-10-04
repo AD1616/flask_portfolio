@@ -73,6 +73,7 @@ def image_data(path="static/RiceTypes/", img_list=None):  # path of static image
             # hexadecimal conversions
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
+            img_dict['hex_array'].append("#" + hex_value)
             #inverting the Image in RGB
             # binary conversions
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
