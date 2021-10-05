@@ -48,8 +48,10 @@ def brainWrite():
 def binary():
     if request.form:
         bits = request.form.get("bits")
+        multbits = "bits"
         if len(bits) != 0:  # input field has content
             return render_template("binary.html", bits=int(bits), pic1= "../static/RiceTypes/Forbidden.PNG", pic2 = "../static/RiceTypes/BasmatiRice.PNG")
+
         # starting and empty input default
     return render_template("binary.html", bits=8, pic1="../static/RiceTypes/Forbidden.PNG", pic2="../static/RiceTypes/BasmatiRice.PNG")
 
