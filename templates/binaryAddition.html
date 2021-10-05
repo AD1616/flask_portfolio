@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<body style = "background-color: lightgrey;">
+<font color = "black">
+    <h1>Binary with RGB</h1>
+    <p>Turn the switches on and off in order to change the color! First row changes shades of red, second row changes shades of green, third row changes shades of blue.</p>
+
+    <br />
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {% for i in range(1, 9) %}
+            <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
+        {% endfor %}
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {% for i in range(1, 9) %}
+            <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
+        {% endfor %}
+    </div>
