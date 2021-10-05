@@ -129,6 +129,10 @@ def rgb():
 def binaryrgb():
     return render_template("binaryrgb.html")
 
+@app.route('/binaryAddition/')
+def binaryAddition():
+    return render_template("binaryAddition.html")
+
 
 # runs the application on the development server
 if __name__ == "__main__":
