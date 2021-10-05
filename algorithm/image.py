@@ -2,7 +2,6 @@ from PIL import Image, ImageDraw, ImageFilter
 import numpy
 import base64
 from io import BytesIO
-import PIL.ImageOps
 
 #
 # filename = input("File name?") or "/static/FlyingPigeon.jpg"
