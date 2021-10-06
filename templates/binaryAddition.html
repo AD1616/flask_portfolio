@@ -11,8 +11,12 @@
     <div class="row">
         <div class="col-sm-1"></div>
         {% for i in range(1, 9) %}
-            <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
+            <button class="col-sm-1" id="o{{i}}" onclick="toggleSwitch('o{{i}}')">0</button>
         {% endfor %}
+
+        <div class="offset-sm-1 col-sm-2">
+            <p id="o">Decimal: 0</p>
+        </div>
     </div>
 
     <br />
@@ -22,7 +26,120 @@
         {% for i in range(1, 9) %}
             <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
         {% endfor %}
+
+        <div class="offset-sm-1 col-sm-2">
+            <p id="g">Decimal: 0</p>
+        </div>
     </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+            <button class="col-sm-1" id="add" onclick="addition('add')">Add</button>
+    </div>
+
+<script>
+
+function addition () {
+
+}
+
+
+var first = 0;
+var green = 0;
+var blue = 0;
+
+function toggleSwitch (id) {
+    const element = document.getElementById(id);
+    if (element.innerHTML == "1") {
+        element.innerHTML = "0";
+    } else {
+        element.innerHTML = "1";
+    }
+    element.classList.toggle("buttonOn");
+    element.classList.toggle("buttonOff");
+
+    calculateRow(id.charAt(0));
+}
+
+function calculateRow (row) {
+    let sum = 0;
+    for (var i = 1; i <= 8; i++) {
+        let element = document.getElementById(row + i);
+        sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
+    }
+    document.getElementById(row).innerHTML = "Decimal value: " + sum;
+    switch (row) {
+        case 'o':
+            first = sum;
+            break;
+        case 'g':
+            green = sum;
+            break;
+        default:
+            break;
+    }
+    setColorCode();
+}
+
+function setColorCode () {
+    let o = first.toString(16);
+    let g = green.toString(16);
+
+    if (o.length == 1) {
+        o = "0" + one;
+    }
+    if (g.length == 1) {
+        g = "0" + g;
+    }
+
+    let code = "#" + o + g;
+    let redCode = "#" + o + "0000";
+    let greenCode = "#" + "00" + g + "00";
+    document.getElementById("color").style.backgroundColor = code;
+    document.getElementById("o").style.backgroundColor = redCode;
+    document.getElementById("green").style.backgroundColor = greenCode;
+    document.getElementById("code").innerHTML = "Hexcode: " + code;
+}
+
+function reset () {
+    for (var i = 1; i <= 8; i++) {
+        document.getElementById('o' + i).innerHTML = "0";
+        document.getElementById('g' + i).innerHTML = "0";
+
+
+        calculateRow('o');
+        calculateRow('g');
+
+        document.getElementById('o' + i).classList.add("buttonOff");
+        document.getElementById('g' + i).classList.add("buttonOff");
+
+        document.getElementById('o' + i).classList.remove("buttonOn");
+        document.getElementById('g' + i).classList.remove("buttonOn");
+
+    }
+}
+
+window.onload = reset();
+
+</script>
+
+<style>
+
+.buttonOff {
+    background-color: black;
+    color: white;
+    font-style: normal;
+}
+
+.buttonOn {
+    background-color: white;
+    color: black;
+    font-style: italic;
+}
+
+</style>
 
 {% endblock %}
 
