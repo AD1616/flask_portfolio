@@ -7,6 +7,17 @@
 | Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
 
+# Sprint 7,8 Week 7
+## Links to issues for this week
+### - [Unit 3.5 and Unit 3.6 work](https://github.com/AD1616/flask_portfolio/issues/46)
+| Member | Job | Ticket |
+| - | - | - |
+| Sahil | Sahil is working on color codes and signed addition this week. | [Ticket for color codes](https://github.com/AD1616/flask_portfolio/issues/34) [Ticket for signed addition](https://github.com/AD1616/flask_portfolio/issues/37)|
+| Erik | Erik is working on extending ASCII to Unicode and logic gates this week. | [Ticket for unicode](https://github.com/AD1616/flask_portfolio/issues/33) [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
+| Isaac | Isaac is working on multiplying and dividing by 2(shift) and logic gates. | [Ticket for multiply/divide by 2](https://github.com/AD1616/flask_portfolio/issues/32) [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
+| Yash |Yash is working on unsigned addition and logic gates this week. | [Ticket for unsigned addition](https://github.com/AD1616/flask_portfolio/issues/35) [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
+#### Plan: I have assigned a lot of members to logic gates so that they have a task to work on after they finish their first task. We will all do Unit 3.5 and 3.6 notes and do any assigned quizzes individually([ticket](https://github.com/AD1616/flask_portfolio/issues/46))
+
 # Sprint 5,6 Week 6
 ## Links to issues for this week
 ### - [RGB Mini lab (Specific tasks on here as check boxes, but also listed as separate tickets on the scrum board)](https://github.com/AD1616/flask_portfolio/issues/29)
