@@ -53,7 +53,7 @@ def binary():
             return render_template("binary.html", bits=int(bits), pic1= "../static/RiceTypes/Forbidden.PNG", pic2 = "../static/RiceTypes/BasmatiRice.PNG")
 
         # starting and empty input default
-    return render_template("binary.html", bits=8, pic1="../static/RiceTypes/Forbidden.PNG", pic2="../static/RiceTypes/BasmatiRice.PNG")
+    return render_template("binary.html", bits=16, pic1="../static/RiceTypes/Forbidden.PNG", pic2="../static/RiceTypes/BasmatiRice.PNG")
 
 
 @app.route('/tpt/', methods=['GET', 'POST'])
