@@ -38,6 +38,10 @@ def Journals():
 def about():
     return render_template("about.html")
 
+@app.route('/logicgates/')
+def logicgates():
+    return render_template("logicgates.html")
+
 
 @app.route('/brainWrite/')
 def brainWrite():
