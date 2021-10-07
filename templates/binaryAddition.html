@@ -24,11 +24,11 @@
     <div class="row">
         <div class="col-sm-1"></div>
         {% for i in range(1, 9) %}
-            <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
+            <button class="col-sm-1" id="t{{i}}" onclick="toggleSwitch('t{{i}}')">0</button>
         {% endfor %}
 
         <div class="offset-sm-1 col-sm-2">
-            <p id="g">Decimal: 0</p>
+            <p id="t">Decimal: 0</p>
         </div>
     </div>
 
@@ -37,18 +37,64 @@
     <div class="row">
         <div class="col-sm-1"></div>
             <button class="col-sm-1" id="add" onclick="addition('add')">Add</button>
+
+        <div class="offset-sm-8 col-sm-2">
+            <p id="addOutput">Added Decimal Value: </p>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <button class="col-sm-1" id="signedAddition" onclick="signedAddition('signedAddition')">Signed Addition(Select 1 for the first bit to create a negative number)</button>
+
+        <div class="offset-sm-8 col-sm-2">
+            <p id="signedOutput">Unsigned Added Decimal value: </p>
+        </div>
+    </div>
+
+
+
 <script>
+var first = 0;
+var second = 0;
 
 function addition () {
-
+    added = first + second
+    var addedStr = added.toString();
+    document.getElementById('addOutput').innerHTML = "Added Decimal value: " + addedStr;
 }
 
+function signedAddition () {
+    var sum1 = 0;
+    var sum2 = 0;
+    var output = 0;
+    const firstBitOne = document.getElementById('o1');
+    const firstBitTwo = document.getElementById('t1');
+    for (var i = 2; i <= 8; i++) {
+        let element1 = document.getElementById('o' + i);
+        sum1 += Math.pow(2, 8 - i) * parseInt(element1.innerHTML);
+    }
+    for (var i = 2; i <= 8; i++) {
+        let element2 = document.getElementById('t' + i);
+        sum2 += Math.pow(2, 8 - i) * parseInt(element2.innerHTML);
+    }
+    if (firstBitOne.innerHTML == "1") {
+        sum1 = 0-sum1;
+    }
+    else {
+        sum1 = sum1;
+    }
+    if (firstBitTwo.innerHTML == "1") {
+        sum2 = 0-sum2;
+    }
+    else {
+        sum2 = sum2;
+    }
+    output = sum1 + sum2
+    var outputStr = output.toString();
+    document.getElementById('signedOutput').innerHTML = "Unsigned Added Decimal value: " + outputStr;
 
-var first = 0;
-var green = 0;
-var blue = 0;
+}
 
 function toggleSwitch (id) {
     const element = document.getElementById(id);
@@ -74,49 +120,31 @@ function calculateRow (row) {
         case 'o':
             first = sum;
             break;
-        case 'g':
-            green = sum;
+        case 't':
+            second = sum;
             break;
         default:
             break;
     }
-    setColorCode();
+
 }
 
-function setColorCode () {
-    let o = first.toString(16);
-    let g = green.toString(16);
 
-    if (o.length == 1) {
-        o = "0" + one;
-    }
-    if (g.length == 1) {
-        g = "0" + g;
-    }
-
-    let code = "#" + o + g;
-    let redCode = "#" + o + "0000";
-    let greenCode = "#" + "00" + g + "00";
-    document.getElementById("color").style.backgroundColor = code;
-    document.getElementById("o").style.backgroundColor = redCode;
-    document.getElementById("green").style.backgroundColor = greenCode;
-    document.getElementById("code").innerHTML = "Hexcode: " + code;
-}
 
 function reset () {
     for (var i = 1; i <= 8; i++) {
         document.getElementById('o' + i).innerHTML = "0";
-        document.getElementById('g' + i).innerHTML = "0";
+        document.getElementById('t' + i).innerHTML = "0";
 
 
         calculateRow('o');
-        calculateRow('g');
+        calculateRow('t');
 
         document.getElementById('o' + i).classList.add("buttonOff");
-        document.getElementById('g' + i).classList.add("buttonOff");
+        document.getElementById('t' + i).classList.add("buttonOff");
 
         document.getElementById('o' + i).classList.remove("buttonOn");
-        document.getElementById('g' + i).classList.remove("buttonOn");
+        document.getElementById('t' + i).classList.remove("buttonOn");
 
     }
 }
