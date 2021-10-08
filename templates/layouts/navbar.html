@@ -11,7 +11,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <a class="nav-link" href="/Journals/">Journals</a>
             <a class="nav-link" href="/riceTypes/">Rice Types</a>
-            <a class="nav-link" href="/logicgates">Logic Gates</a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
                     Concepts/MiniLabs
@@ -22,7 +21,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <li><a class="dropdown-item" href={{ url_for('binary') }}>binary</a></li>
                     <li><a class="dropdown-item" href={{ url_for('rgb') }}>rgb</a></li>
                     <li><a class="dropdown-item" href="/tpt">tpt</a></li>
-                    <li><a class="dropdown-item" href={{ url_for('binaryAddition') }}>Unsigned Addition</a></li>
+                    <li><a class="dropdown-item" href={{ url_for('logicgates') }}>Unsigned Addition</a></li>
                 </ul>
             </li>
             <li><a class="nav-link" href="/about/">About</a></li>
