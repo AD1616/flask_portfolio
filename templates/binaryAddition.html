@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-<body style = "background-color: lightgrey;">
+<body style = " background-color: lightgrey;">
 <font color = "black">
     <h1>Binary Addition</h1>
     <p> </p>
@@ -34,7 +34,14 @@
 
     <br />
 
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
 
+        <div class="offset-sm-8 col-sm-2">
+            <p id="addOutput">Added Decimal Value: </p>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-sm-1"></div>
@@ -51,7 +58,11 @@
 var first = 0;
 var second = 0;
 
-
+function unsignedAddition () {
+    added = first + second
+    var addedStr = added.toString();
+    document.getElementById('addOutput').innerHTML = "Added Decimal value: " + addedStr;
+}
 
 function signedAddition () {
     var sum1 = 0;
