@@ -47,6 +47,10 @@
         <div class="offset-sm-8 col-sm-2">
             <p id="addOutput">Added Decimal Value: </p>
         </div>
+
+        <div class="offset-sm col-sm-2">
+            <p id="binaryAddOutput">Added Binary Value: </p>
+        </div>
     </div>
 
     <div class="row">
@@ -55,6 +59,10 @@
 
         <div class="offset-sm-7 col-sm-2">
             <p id="signedOutput">Signed Added Decimal value: </p>
+        </div>
+
+        <div class="offset-sm col-sm-2">
+            <p id="binarySignedOutput">Signed Added Binary value: </p>
         </div>
     </div>
 
@@ -68,6 +76,8 @@ function unsignedAddition () {
     added = first + second
     var addedStr = added.toString();
     document.getElementById('addOutput').innerHTML = "Added Decimal value: " + addedStr;
+    const secondBinaryResult = added.toString(2);
+    document.getElementById('binaryAddOutput').innerHTML = "Unsigned Added Binary value: " + secondBinaryResult;
 }
 
 function signedAddition () {
@@ -104,7 +114,10 @@ function signedAddition () {
 
     output = sum1 + sum2
     var outputStr = output.toString();
-    document.getElementById('signedOutput').innerHTML = "Unsigned Added Decimal value: " + outputStr;
+    document.getElementById('signedOutput').innerHTML = "Signed Added Decimal value: " + outputStr;
+    const binaryResult = output.toString(2);
+    document.getElementById('binarySignedOutput').innerHTML = "Signed Added Binary value: " + binaryResult;
+
 
 }
 
