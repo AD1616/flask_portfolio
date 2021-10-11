@@ -45,11 +45,11 @@
         <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
 
         <div class="offset-sm-8 col-sm-2">
-            <p id="addOutput">Added Decimal Value: </p>
+            <p id="addOutput">Unsigned Added Decimal Value: </p>
         </div>
 
         <div class="offset-sm col-sm-2">
-            <p id="binaryAddOutput">Added Binary Value: </p>
+            <p id="binaryAddOutput">Unsigned Added Binary Value: </p>
         </div>
     </div>
 
@@ -101,7 +101,7 @@ function signedAddition () {
         sum1 = sum1;
     }
 
-    document.getElementById('x').innerHTML = "Signed Decimal value: " + sum1;
+    document.getElementById('x').innerHTML = "Unsigned Decimal value: " + sum1;
 
     if (firstBitTwo.innerHTML == "1") {
         sum2 = 0-sum2;
