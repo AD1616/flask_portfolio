@@ -6,68 +6,67 @@
     <h1>Binary with RGB</h1>
     <p>Turn the switches on and off in order to change the color! First row changes shades of red, second row changes shades of green, third row changes shades of blue.</p>
 
-    <br />
-
     <div class="row">
         <div class="col-sm-1"></div>
+        {#Creating the row of bits with functionality to change the value between 0 and 1 upon clicking through button accesing toggleSwitch function#}
         {% for i in range(1, 9) %}
-        <button class="col-sm-1" id="r{{i}}" onclick="toggleSwitch('r{{i}}')">0</button>
+        <button class="col-sm-1" id="R{{i}}" onclick="toggleSwitch('R{{i}}')">0</button>
         {% endfor %}
 
         <div class="offset-sm-1 col-sm-2">
-            <p id="r">Decimal: 0</p>
+            <p id="R">Red RGB value: 0</p>
         </div>
         {#Color for red#}
         <div class="offset-sm-11 col-sm-1" id="red" style="background-color: #000000; height: 5vh;">
         </div>
     </div>
 
-    <br />
 
     <div class="row">
         <div class="col-sm-1"></div>
+        {#Creating the row of bits with functionality to change the value between 0 and 1 upon clicking through button accesing toggleSwitch function#}
         {% for i in range(1, 9) %}
-        <button class="col-sm-1" id="g{{i}}" onclick="toggleSwitch('g{{i}}')">0</button>
+        <button class="col-sm-1" id="G{{i}}" onclick="toggleSwitch('G{{i}}')">0</button>
         {% endfor %}
 
         <div class="offset-sm-1 col-sm-2">
-            <p id="g">Decimal: 0</p>
+            <p id="G">Green RGB value: 0</p>
         </div>
         {#Color for green#}
-        <div class="offset-sm-11 col-sm-1" id="blue" style="background-color: #000000; height: 5vh;">
-        </div>
-    </div>
-
-    <br />
-
-    <div class="row">
-        <div class="col-sm-1"></div>
-        {% for i in range(1, 9) %}
-        <button class="col-sm-1" id="b{{i}}" onclick="toggleSwitch('b{{i}}')">0</button>
-        {% endfor %}
-
-        <div class="offset-sm-1 col-sm-2">
-            <p id="b">Decimal: 0</p>
-        </div>
-        {#Color for blue#}
         <div class="offset-sm-11 col-sm-1" id="green" style="background-color: #000000; height: 5vh;">
         </div>
     </div>
 
-    <br />
 
-    <div class="offset-sm-1 col-sm-10" id="color" style="background-color: #000000; height: 20vh;">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        {#Creating the row of bits with functionality to change the value between 0 and 1 upon clicking through button accesing toggleSwitch function#}
+        {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="B{{i}}" onclick="toggleSwitch('B{{i}}')">0</button>
+        {% endfor %}
+
+        <div class="offset-sm-1 col-sm-2">
+            <p id="B">Blue RGB value: 0</p>
+        </div>
+        {#Color for blue#}
+        <div class="offset-sm-11 col-sm-1" id="blue" style="background-color: #000000; height: 5vh;">
+        </div>
+    </div>
+
+    <br> <br> <br>
+
+    {# Creating a color comprised of the R, G, and B input values #}
+    <div class="offset-sm-1 col-sm-10" id="color" style="background-color: #000000; height: 30vh;">
     </div>
     <p style="text-align: center;" id="code">Hexcode: #000000</p>
 
-    <br />
 
 
 <script>
 
-var red = 0;
-var green = 0;
-var blue = 0;
+var redValue = 0;
+var greenValue = 0;
+var blueValue = 0;
 
 function toggleSwitch (id) {
     const element = document.getElementById(id);
@@ -79,25 +78,28 @@ function toggleSwitch (id) {
     element.classList.toggle("buttonOn");
     element.classList.toggle("buttonOff");
 
+    {# Calculating the RGB value for each row, iterating through them based on the first letter of the ID which will differentiate R, G, and B#}
     calculateRow(id.charAt(0));
 }
 
-function calculateRow (color) {
+function calculateRow (colorValue) {
     let sum = 0;
     for (var i = 1; i <= 8; i++) {
-        let element = document.getElementById(color + i);
+        let element = document.getElementById(colorValue + i);
         sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
     }
-    document.getElementById(color).innerHTML = "Decimal value: " + sum;
-    switch (color) {
-        case 'r':
-            red = sum;
+    switch (colorValue) {
+        case 'R':
+            redValue = sum;
+            document.getElementById(colorValue).innerHTML = "Red RGB value: " + sum;
             break;
-        case 'g':
-            green = sum;
+        case 'G':
+            greenValue = sum;
+            document.getElementById(colorValue).innerHTML = "Green RGB value: " + sum;
             break;
-        case 'b':
-            blue = sum;
+        case 'B':
+            blueValue = sum;
+            document.getElementById(colorValue).innerHTML = "Blue RGB value: " + sum;
             break;
         default:
             break;
@@ -106,69 +108,48 @@ function calculateRow (color) {
 }
 
 function setColorCode () {
-    let r = red.toString(16);
-    let g = green.toString(16);
-    let b = blue.toString(16);
+    let R = redValue.toString(16);
+    let G = greenValue.toString(16);
+    let B = blueValue.toString(16);
 
-    if (r.length == 1) {
-        r = "0" + r;
+    {#If the hexcode of each color value only takes up one digit, then we will add a 0 in front#}
+    if (R.length == 1) {
+        R = "0" + R;
     }
-    if (g.length == 1) {
-        g = "0" + g;
+    if (G.length == 1) {
+        G = "0" + G;
     }
-    if (b.length == 1) {
-        b = "0" + b;
+    if (B.length == 1) {
+        B = "0" + B;
     }
-
-    let code = "#" + r + g + b;
-    let redCode = "#" + r + "0000";
-    let blueCode = "#" + "0000" + b;
-    let greenCode = "#" + "00" + g + "00";
+    {# Calculating overall hexcode #}
+    let code = "#" + R + G + B;
+    {# Calculating individual color hexcode#}
+    let redCode = "#" + R + "0000";
+    let blueCode = "#" + "0000" + B;
+    let greenCode = "#" + "00" + G + "00";
     document.getElementById("color").style.backgroundColor = code;
     document.getElementById("red").style.backgroundColor = redCode;
-    document.getElementById("green").style.backgroundColor = blueCode;
-    document.getElementById("blue").style.backgroundColor = greenCode;
+    document.getElementById("green").style.backgroundColor = greenCode;
+    document.getElementById("blue").style.backgroundColor = blueCode;
     document.getElementById("code").innerHTML = "Hexcode: " + code;
 }
 
-function reset () {
-    for (var i = 1; i <= 8; i++) {
-        document.getElementById('r' + i).innerHTML = "0";
-        document.getElementById('g' + i).innerHTML = "0";
-        document.getElementById('b' + i).innerHTML = "0";
-
-        calculateRow('r');
-        calculateRow('b');
-        calculateRow('g');
-
-        document.getElementById('r' + i).classList.add("buttonOff");
-        document.getElementById('g' + i).classList.add("buttonOff");
-        document.getElementById('b' + i).classList.add("buttonOff");
-
-        document.getElementById('r' + i).classList.remove("buttonOn");
-        document.getElementById('g' + i).classList.remove("buttonOn");
-        document.getElementById('b' + i).classList.remove("buttonOn");
-    }
-}
-
-window.onload = reset();
 
 </script>
 
 <style>
 
 .buttonOff {
-    background-color: black;
-    color: white;
-    font-style: normal;
+    background-color: lightgray;
+    color: black;
 }
 
 .buttonOn {
-    background-color: white;
+    background-color: lightgrey;
     color: black;
-    font-style: italic;
 }
 
 </style>
-
+</font>
 {% endblock %}

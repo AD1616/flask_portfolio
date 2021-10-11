@@ -1,10 +1,10 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-<body style = "background-color: lightgrey;">
+<body style = " background-color: lightgrey;">
 <font color = "black">
     <h1>Binary Addition</h1>
-    <p> </p>
+    <p>First bit changes sign</p>
 
     <br />
 
@@ -15,7 +15,10 @@
         {% endfor %}
 
         <div class="offset-sm-1 col-sm-2">
-            <p id="o">Decimal: 0</p>
+            <p id="o">Unsigned Decimal value: 0</p>
+        </div>
+        <div class="offset-sm-1 col-sm-2">
+            <p id="x">Signed Decimal value: 0</p>
         </div>
     </div>
 
@@ -28,7 +31,10 @@
         {% endfor %}
 
         <div class="offset-sm-1 col-sm-2">
-            <p id="t">Decimal: 0</p>
+            <p id="t">Unsigned Decimal value: 0</p>
+        </div>
+        <div class="offset-sm-1 col-sm-2">
+            <p id="y">Signed Decimal value: 0</p>
         </div>
     </div>
 
@@ -36,7 +42,7 @@
 
     <div class="row">
         <div class="col-sm-1"></div>
-            <button class="col-sm-1" id="add" onclick="addition('add')">Add</button>
+        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
 
         <div class="offset-sm-8 col-sm-2">
             <p id="addOutput">Added Decimal Value: </p>
@@ -45,10 +51,10 @@
 
     <div class="row">
         <div class="col-sm-1"></div>
-        <button class="col-sm-2" id="signedAddition" onclick="signedAddition('signedAddition')">Signed Addition(Select 1 for the first bit to create a negative number)</button>
+        <button class="col-sm-2" id="signedAddition" onclick="signedAddition('signedAddition')">Toggle signed numbers and signed addition</button>
 
-        <div class="offset-sm-8 col-sm-2">
-            <p id="signedOutput">Unsigned Added Decimal value: </p>
+        <div class="offset-sm-7 col-sm-2">
+            <p id="signedOutput">Signed Added Decimal value: </p>
         </div>
     </div>
 
@@ -58,7 +64,7 @@
 var first = 0;
 var second = 0;
 
-function addition () {
+function unsignedAddition () {
     added = first + second
     var addedStr = added.toString();
     document.getElementById('addOutput').innerHTML = "Added Decimal value: " + addedStr;
@@ -84,12 +90,18 @@ function signedAddition () {
     else {
         sum1 = sum1;
     }
+
+    document.getElementById('x').innerHTML = "Signed Decimal value: " + sum1;
+
     if (firstBitTwo.innerHTML == "1") {
         sum2 = 0-sum2;
     }
     else {
         sum2 = sum2;
     }
+
+    document.getElementById('y').innerHTML = "Signed Decimal value: " + sum2;
+
     output = sum1 + sum2
     var outputStr = output.toString();
     document.getElementById('signedOutput').innerHTML = "Unsigned Added Decimal value: " + outputStr;
@@ -115,7 +127,7 @@ function calculateRow (row) {
         let element = document.getElementById(row + i);
         sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
     }
-    document.getElementById(row).innerHTML = "Decimal value: " + sum;
+    document.getElementById(row).innerHTML = "Unsigned Decimal value: " + sum;
     switch (row) {
         case 'o':
             first = sum;
