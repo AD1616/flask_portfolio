@@ -14,22 +14,24 @@
     .verticalLine {
         margin-left: 1em;
         width: 2px;
-        height: 375px;
+        height: 385px;
         background: black;
     }
 
     .buttonFalse {
-        background-color: black;
+        background-color: green;
         color: white;
         font-style: normal;
-        width: 2em;
+        width: 2.5em;
+        height: 2.5em;
     }
 
     .buttonTrue {
-        background-color: white;
-        color: black;
+        background-color: red;
+        color: white;
         font-style: italic;
-        width: 2em;
+        width: 2.5em;
+        height: 2.5em;
     }
 </style>
 
@@ -65,21 +67,21 @@
 
     <div class="row">
         <div class="center">
-            <div class="verticalLine" style="position: relative; left: 700px; top: -470px;"></div>
+            <div class="verticalLine" style="position: relative; left: 700px; top: -485px;"></div>
         </div>
         <div class="center">
-            <div class="horizontalLine" style="position: relative; left: 717px; top: -660px;"></div>
+            <div class="horizontalLine" style="position: relative; left: 717px; top: -675px;"></div>
         </div>
 
-        <div class="center" style="position: relative; left: 875px; top: -672px;">  <!-- Clickable text that can change the operator used -->
+        <div class="center" style="position: relative; left: 875px; top: -687px;">  <!-- Clickable text that can change the operator used -->
             <p id="operator" onclick="nextOp()">AND</p>
         </div>
 
         <div class="center">
-            <div class="horizontalLine" style="position: relative; left: 917px; top: -701px;"></div>
+            <div class="horizontalLine" style="position: relative; left: 917px; top: -716px;"></div>
         </div>
 
-        <div class="center" style="position: relative; left: 1081px; top: -736px; font-size: 40px;">
+        <div class="center" style="position: relative; left: 1081px; top: -751px; font-size: 40px;">
             <p id="result">true</p>
         </div>
     </div>
