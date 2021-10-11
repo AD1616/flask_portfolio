@@ -122,10 +122,10 @@
             let binary = getBits();
             // convert to decimal and do math
             let decimal = parseInt(binary, 2);
-            if (n > 0) {  // PLUS
-                decimal = MAX === decimal ? 0 : decimal << n; // OVERFLOW or PLUS
-            } else  {     // MINUS
-                decimal = decimal; // OVERFLOW or MINUS
+            if (n > 0) {  // overflow
+                decimal = MAX === decimal ? 0 : decimal << n; // shift
+            } else  {     // multiply
+                decimal = decimal; // OVERFLOW
             }
             // convert the result back to binary
             binary = decimal_2_base(decimal, 2);
@@ -150,9 +150,9 @@
             // convert to decimal and do math
             let decimal = parseInt(binary, 2);
             if (n > 0) {  // PLUS
-                decimal = MAX === decimal ? 0 : decimal >> n; // OVERFLOW or PLUS
-            } else  {     // MINUS
-                decimal = decimal; // OVERFLOW or MINUS
+                decimal = MAX === decimal ? 0 : decimal >> n; // Multiply
+            } else  {     // Multiplu
+                decimal = decimal; // shift
             }
             // convert the result back to binary
             binary = decimal_2_base(decimal, 2);
