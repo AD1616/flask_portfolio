@@ -1,15 +1,17 @@
 {% extends "layouts/base.html" %}
 
 {% block body %}
-<body style = " background-color: lightgrey;">
+<body style = " background-color: palegoldenrod;">
 <font color = "black">
+{% set imgBulbOn = "../static/RiceTypes/Forbidden.PNG" %}
+{% set imgBulbOff = "../static/RiceTypes/Forbidden.PNG" %}
     <h1>Binary Addition</h1>
     <p>First bit changes sign</p>
 
     <br />
 
     <div class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-3"></div>
         {% for i in range(1, 9) %}
             <button class="col-sm-1" id="o{{i}}" onclick="toggleSwitch('o{{i}}')">0</button>
         {% endfor %}
@@ -22,10 +24,22 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
+
+        <div class="offset-sm-8 col-sm-2">
+            <p id="addOutput">Unsigned Added Decimal Value: </p>
+        </div>
+
+        <div class="offset-sm col-sm-2">
+            <p id="binaryAddOutput">Unsigned Added Binary Value: </p>
+        </div>
+    </div>
     <br />
 
     <div class="row">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-3"></div>
         {% for i in range(1, 9) %}
             <button class="col-sm-1" id="t{{i}}" onclick="toggleSwitch('t{{i}}')">0</button>
         {% endfor %}
@@ -40,18 +54,7 @@
 
     <br />
 
-    <div class="row">
-        <div class="col-sm-1"></div>
-        <button class="col-sm-1" id="add" onclick="unsignedAddition('add')">Add</button>
 
-        <div class="offset-sm-8 col-sm-2">
-            <p id="addOutput">Unsigned Added Decimal Value: </p>
-        </div>
-
-        <div class="offset-sm col-sm-2">
-            <p id="binaryAddOutput">Unsigned Added Binary Value: </p>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col-sm-1"></div>
@@ -181,15 +184,13 @@ window.onload = reset();
 <style>
 
 .buttonOff {
-    background-color: black;
-    color: white;
-    font-style: normal;
+    background-color: lightgray;
+    color: black;
 }
 
 .buttonOn {
-    background-color: white;
+    background-color: lightgrey;
     color: black;
-    font-style: italic;
 }
 
 </style>
