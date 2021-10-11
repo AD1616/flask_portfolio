@@ -7,13 +7,14 @@
     .horizontalLine {
         border: 0;
         background-color: #000;
-        height: 3px;
-        transform: translateX(-3em);
+        height: 2px;
+        width: 150px;
     }
 
     .verticalLine {
         margin-left: 1em;
-        width: 1px;
+        width: 2px;
+        height: 375px;
         background: black;
     }
 
@@ -41,44 +42,46 @@
     </div>
 
     <div class="row">
-        <div class="offset-sm-3 col-sm-1">   <!-- Two buttons to show 0 and 1 -->
+        <div class="column" style="height: 25em">   <!-- Two buttons to show 0 and 1 -->
             <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
-            <div class="verticalLine" style="height: 10em"></div>
         </div>
 
-        <div class="offset-sm-5 col-sm-1">
-            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
-            <div class="verticalLine" style="height: 10em"></div>
+        <div class="column" style="position:relative; left:200px; top:-395px;">  <!-- NOT buttons that can be toggled; shows inverter -->
+            <p id="not1" onclick="toggleNot('not1')">NOT</p>
         </div>
+        <div class="horizontalLine" style="position:relative; left:55px; top:-425px;"></div>
     </div>
 
     <div class="row">
-        <div class="offset-sm-3 col-sm-1">  <!-- NOT buttons that can be toggled; shows inverter -->
-            <p id="not1" onclick="toggleNot('not1')">NOT</p>
-        </div>
-
-        <div class="col-sm-5 horizontalLine"></div>  <!-- Horizontal line in action -->
-
-        <div class="col-sm-1">
+        <div class="column" style="position:relative; left:200px; top:-10px;">
             <p id="not2" onclick="toggleNot('not2')">NOT</p>
         </div>
+
+        <div class="column" style="position:relative; top:-52px;">
+            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
+        </div>
+        <div class="horizontalLine" style="position:relative; left:55px; top:-70px;"></div>
     </div>
 
+    <div class="row">
+        <div class="center">
+            <div class="verticalLine" style="position: relative; left: 200px; top: -470px;"></div>
+        </div>
+        <div class="center">
+            <div class="horizontalLine" style="position: relative; left: 217px; top: -660px;"></div>
+        </div>
 
-    <div class="center">
-        <div class="verticalLine" style="height: 4em; transform: translateY(-2em)"></div>
-    </div>
+        <div class="center" style="position: relative; left: 375px; top: -672px;">  <!-- Clickable text that can change the operator used -->
+            <p id="operator" onclick="nextOp()">AND</p>
+        </div>
 
-    <div class="center" style="transform: translate(0.5em, -1.5em)">  <!-- Clickable text that can change the operator used -->
-        <p id="operator" onclick="nextOp()">AND</p>
-    </div>
+        <div class="center">
+            <div class="horizontalLine" style="position: relative; left: 417px; top: -701px;"></div>
+        </div>
 
-    <div class="center">
-        <div class="verticalLine" style="height: 4em; transform: translateY(-2em)"></div>
-    </div>
-
-    <div class="center" style="transform: translate(0.5em, -1.5em)">
-        <p id="result">true</p>
+        <div class="center" style="position: relative; left: 581px; top: -736px; font-size: 40px;">
+            <p id="result">true</p>
+        </div>
     </div>
 </font>
 
