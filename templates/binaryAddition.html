@@ -1,0 +1,218 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<body style = " background-color: palegoldenrod;">
+<font color = "black">
+
+<h1>Binary Addition</h1>
+<p>First bit changes sign</p>
+
+<br />
+
+<div class="row">
+    <div class="col-sm-1">
+        <p id="x">Signed Decimal value: 0</p>
+    </div>
+
+    <div class="col-sm"></div>
+    {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="o{{i}}" onclick="toggleSwitch('o{{i}}')">0</button>
+    {% endfor %}
+
+    <div class="col-sm-2">
+        <p id="o">Unsigned Decimal value: 0</p>
+    </div>
+
+</div>
+
+<br />
+
+<div class="row">
+    <div class="col-sm-1">
+        <p id="y">Signed Decimal value: 0</p>
+    </div>
+    <div class="col-sm"></div>
+    {% for i in range(1, 9) %}
+        <button class="col-sm-1" id="t{{i}}" onclick="toggleSwitch('t{{i}}')">0</button>
+    {% endfor %}
+
+    <div class="col-sm-2">
+        <p id="t">Unsigned Decimal value: 0</p>
+    </div>
+
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-1">
+        <button class="signedButton" id="signedAddition" onclick="signedAddition('signedAddition')" >Add(Signed) Also press this to see signed values for each row.</button>
+    </div>
+    <div class="col-sm-1 offset-sm-8">
+        <button class="unsignedButton" id="add" onclick="unsignedAddition('add')">Add(Unsigned)</button>
+    </div>
+</div>
+
+<br>
+<hr style="height:10px;border-width:0;color:black">
+<br> <br>
+
+<div class="row">
+    <div class = "col-sm">
+        <p id="binarySignedOutput">Signed Added Binary value: </p>
+    </div>
+    <div class="offset-sm-7 col-sm-2">
+        <p id="binaryAddOutput">Unsigned Added Binary Value: </p>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-sm">
+        <p id="signedOutput">Signed Added Decimal value: </p>
+    </div>
+
+    <div class="offset-sm-7 col-sm-2">
+        <p id="addOutput">Unsigned Added Decimal Value: </p>
+    </div>
+</div>
+
+<script>
+var first = 0;
+var second = 0;
+
+function unsignedAddition () {
+    added = first + second
+    var addedStr = added.toString();
+    document.getElementById('addOutput').innerHTML = "Unsigned Added Decimal value: " + addedStr;
+    const secondBinaryResult = added.toString(2);
+    document.getElementById('binaryAddOutput').innerHTML = "Unsigned Added Binary value: " + secondBinaryResult;
+}
+
+function signedAddition () {
+    var sum1 = 0;
+    var sum2 = 0;
+    var output = 0;
+    const firstBitOne = document.getElementById('o1');
+    const firstBitTwo = document.getElementById('t1');
+    for (var i = 2; i <= 8; i++) {
+        let element1 = document.getElementById('o' + i);
+        sum1 += Math.pow(2, 8 - i) * parseInt(element1.innerHTML);
+    }
+    for (var i = 2; i <= 8; i++) {
+        let element2 = document.getElementById('t' + i);
+        sum2 += Math.pow(2, 8 - i) * parseInt(element2.innerHTML);
+    }
+    if (firstBitOne.innerHTML == "1") {
+        sum1 = 0-sum1;
+    }
+    else {
+        sum1 = sum1;
+    }
+
+    document.getElementById('x').innerHTML = "Signed Decimal value: " + sum1;
+
+    if (firstBitTwo.innerHTML == "1") {
+        sum2 = 0-sum2;
+    }
+    else {
+        sum2 = sum2;
+    }
+
+    document.getElementById('y').innerHTML = "Signed Decimal value: " + sum2;
+
+    output = sum1 + sum2
+    var outputStr = output.toString();
+    document.getElementById('signedOutput').innerHTML = "Signed Added Decimal value: " + outputStr;
+    var binaryResult = output.toString(2);
+    if (output < 0) {
+        binaryResult = -binaryResult;
+        binaryResult = "1" + binaryResult;
+    }
+
+    document.getElementById('binarySignedOutput').innerHTML = "Signed Added Binary value: " + binaryResult;
+
+
+}
+
+function toggleSwitch (id) {
+    const element = document.getElementById(id);
+    if (element.innerHTML == "1") {
+        element.innerHTML = "0";
+    } else {
+        element.innerHTML = "1";
+    }
+    element.classList.toggle("buttonOn");
+    element.classList.toggle("buttonOff");
+
+    calculateRow(id.charAt(0));
+}
+
+function calculateRow (row) {
+    let sum = 0;
+    for (var i = 1; i <= 8; i++) {
+        let element = document.getElementById(row + i);
+        sum += Math.pow(2, 8 - i) * parseInt(element.innerHTML);
+    }
+    document.getElementById(row).innerHTML = "Unsigned Decimal value: " + sum;
+    switch (row) {
+        case 'o':
+            first = sum;
+            break;
+        case 't':
+            second = sum;
+            break;
+        default:
+            break;
+    }
+
+}
+
+function reset () {
+    for (var i = 1; i <= 8; i++) {
+        document.getElementById('o' + i).innerHTML = "0";
+        document.getElementById('t' + i).innerHTML = "0";
+
+        calculateRow('o');
+        calculateRow('t');
+
+        document.getElementById('o' + i).classList.add("buttonOff");
+        document.getElementById('t' + i).classList.add("buttonOff");
+
+        document.getElementById('o' + i).classList.remove("buttonOn");
+        document.getElementById('t' + i).classList.remove("buttonOn");
+
+    }
+}
+
+</script>
+
+<style>
+
+.buttonOff {
+    background-color: lightgray;
+    color: black;
+}
+
+.buttonOn {
+    background-color: lightgrey;
+    color: black;
+}
+.signedButton {
+    background-color: cornflowerblue;
+    color: black;
+    font-style: normal;
+    width: 30em;
+}
+.unsignedButton {
+    background-color: cornflowerblue;
+    color: black;
+    font-style: normal;
+    width: 25em;
+}
+
+
+
+</style>
+
+{% endblock %}
+
