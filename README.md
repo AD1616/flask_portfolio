@@ -18,6 +18,8 @@
 | Yash |Yash is working on unsigned addition and logic gates this week. | [Ticket for unsigned addition](https://github.com/AD1616/flask_portfolio/issues/35), [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
 
 ## [Runtime Video for this week](https://www.youtube.com/watch?v=VWZpLjm3h34)
+### [TT7 Activity](https://github.com/AD1616/flask_portfolio/blob/main/templates/tt7Activity1.py)
+### [TT7 Notes](https://docs.google.com/document/d/1LZ9xvFUnjqGjdHqfzBByb52CB4-5WtT8ud-7c6lKU5w/edit)
 #### Summary: I(Sahil) finished color codes and signed addition this week. Erik finished logic gates and unicode. Yash finished unsigned addition and helped with logic gates a bit. Isaac finished the multiplying and dividing by 2 shift. We  all did Unit 3.5 and 3.6 notes and completed both quizzes.
 
 # Sprint 5,6 Week 6
