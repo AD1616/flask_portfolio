@@ -14,7 +14,7 @@
 | - | - | - |
 | Sahil | Sahil is working on color codes and signed addition this week. | [Ticket for color codes](https://github.com/AD1616/flask_portfolio/issues/34), [Ticket for signed addition](https://github.com/AD1616/flask_portfolio/issues/37)|
 | Erik | Erik is working on extending ASCII to Unicode and logic gates this week. | [Ticket for unicode](https://github.com/AD1616/flask_portfolio/issues/33), [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
-| Isaac | Isaac is working on multiplying and dividing by 2(shift) and logic gates. | [Ticket for multiply/divide by 2](https://github.com/AD1616/flask_portfolio/issues/32), [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
+| Isaac | Isaac is working on multiplying and dividing by 2(shift). | [Ticket for multiply/divide by 2](https://github.com/AD1616/flask_portfolio/issues/32)|
 | Yash |Yash is working on unsigned addition and logic gates this week. | [Ticket for unsigned addition](https://github.com/AD1616/flask_portfolio/issues/35), [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
 #### Plan: I have assigned a lot of members to logic gates so that they have a task to work on after they finish their first task. We will all do Unit 3.5 and 3.6 notes and do any assigned quizzes individually.
 
