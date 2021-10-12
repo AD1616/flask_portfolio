@@ -74,7 +74,7 @@
 
     <div class="row">
         <div class="column" style="position:relative; left: 500px; height: 25em">   <!-- Two buttons to show 0 and 1 -->
-            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">A</button>
+            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
         </div>
 
         <div class="column" style="position:relative; left:700px; top:-395px;">  <!-- NOT buttons that can be toggled; shows inverter -->
@@ -85,7 +85,7 @@
 
     <div class="row">
         <div class="column" style="position:relative; left:500px; top:-17px;">
-            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">A</button>
+            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
         </div>
 
         <div class="column" style="position:relative; left:700px; top:-50px;">
@@ -124,10 +124,10 @@
     function toggleBool(id) {  // Toggles 0 and 1
         const element = document.getElementById(id);
 
-        if (element.innerHTML == "B") {
-            element.innerHTML = "A";
+        if (element.innerHTML == "1") {
+            element.innerHTML = "0";
         } else {
-            element.innerHTML = "B";
+            element.innerHTML = "1";
         }
 
         element.classList.toggle("buttonTrue");
