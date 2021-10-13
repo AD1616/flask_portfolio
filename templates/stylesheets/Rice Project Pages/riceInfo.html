@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+<html>
+<head>
+    <title>Rice Information</title>
+</head>
+{% block body %}
+<body>
+    <h1>Cool Rice Facts</h1>
+    <div id="showFact">
+        <!-- The quote will pop up here -->
+    </div>
+    <button onclick="newFact()">New Fact</button>
+
+    <script>
+        var facts = [
+            'Some parts of the Great Wall of China were put together using sticky rice.',
+            'Around 504.3 million metric tons of rice were consumed between 2020 and 2021',
+            'China is the leading producer of rice with India not to far behind',
+        ]
+
+        function newFact() {
+            var randomNumber = Math.floor(Math.random() * (facts.length));
+            document.getElementById('showFact').innerHTML = facts[randomNumber];
+        }
+
+    </script>
+</body>
+{% endblock %}
+</html>

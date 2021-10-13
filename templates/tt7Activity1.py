@@ -1,4 +1,4 @@
-student_list = ['pam','rob','joe','greg','bob','amy','matt']
+student_list = ['pam', 'rob','joe','greg','bob','amy','matt']
 
 # The following print statement includes elements at index 2 & excludes element at index 5
 print(student_list[2:5])

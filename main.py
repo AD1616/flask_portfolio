@@ -52,7 +52,6 @@ def brainWrite():
 def binary():
     if request.form:
         bits = request.form.get("bits")
-        multbits = "bits"
         if len(bits) != 0:  # input field has content
             return render_template("binary.html", bits=int(bits), pic1= "../static/RiceTypes/Forbidden.PNG", pic2 = "../static/RiceTypes/BasmatiRice.PNG")
 
@@ -135,9 +134,15 @@ def rgb():
 def binaryrgb():
     return render_template("binaryrgb.html")
 
+
 @app.route('/binaryAddition/')
 def binaryAddition():
     return render_template("binaryAddition.html")
+
+
+@app.route('/riceInfo/', methods=["GET", "POST"])
+def riceInfo():
+    return render_template("riceInfo.html")
 
 
 # runs the application on the development server
