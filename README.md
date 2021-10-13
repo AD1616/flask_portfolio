@@ -7,6 +7,18 @@
 | Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
 
+# Sprint 7,8 Week 8
+## Links to issues for this week
+### - [Unit 3.7 work]
+### - [Unit 3.8 work]
+### - [Journal solution to RGB and Logic Gate and mapping of labs to CB work]
+| Member | Job | Ticket |
+| - | - | - |
+| Sahil | Sahil is working on creating rice suggestions and rice quiz this week. | [Ticket for Rice Suggestions](https://github.com/AD1616/flask_portfolio/issues/56), [Ticket for Rice Quiz](https://github.com/AD1616/flask_portfolio/issues/52)|
+| Erik | Erik is working on rice quiz and rice information page this week. | [Ticket for Rice Quiz](https://github.com/AD1616/flask_portfolio/issues/52), [Ticket for Rice Information page](https://github.com/AD1616/flask_portfolio/issues/53) |
+| Isaac | Isaac is working on the rice information page this week. | [Ticket for Rice Information page](https://github.com/AD1616/flask_portfolio/issues/53)|
+| Yash |Yash is working on the Rice Suggestions page and creating a scavenger hunt this week. | [Ticket for Rice Suggestions](https://github.com/AD1616/flask_portfolio/issues/56), [Ticket for Scavenger hunt](https://github.com/AD1616/flask_portfolio/issues/54) |
+
 # Sprint 7,8 Week 7
 ## Links to issues for this week
 ### - [Unit 3.5 and Unit 3.6 work](https://github.com/AD1616/flask_portfolio/issues/46)
