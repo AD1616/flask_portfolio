@@ -1,4 +1,5 @@
 # Team Pigeon Chest
+## Our project will be all about rice. We will have information about rice, fun activities with rice, and of course things relating to eating and making rice.
 ## [Journal](https://drive.google.com/drive/u/1/folders/1n59WRVuWyoP48XkWbADahArmkUwvozFe)
 | Name | Github Profile | Tasks | Scrum Board | Commit History |
 | - | - | - | - | - |
@@ -6,6 +7,20 @@
 | Sahil Samar | [@AD1616](https://github.com/AD1616) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/AD1616) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aad1616) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=AD1616) |
 | Isaac Le | [@Isaac-Le](https://github.com/Isaac-Le) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/Isaac-Le) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Aisaac-le) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=Isaac-Le) |
 | Yash Shah | [@YashShah138](https://github.com/YashShah138) | [Tasks](https://github.com/AD1616/flask_portfolio/issues/assigned/YashShah138) | [Scrum Board](https://github.com/AD1616/flask_portfolio/projects/1?card_filter_query=assignee%3Ayashshah138) | [Commits](https://github.com/AD1616/flask_portfolio/commits?author=YashShah138) |
+
+# Sprint 7,8 Week 8
+## Links to issues for this week
+### - [Unit 3.7 work](https://github.com/AD1616/flask_portfolio/issues/49)
+### - [Unit 3.8 work](https://github.com/AD1616/flask_portfolio/issues/50)
+### - [Journal solution to RGB and Logic Gate and mapping of labs to CB work](https://github.com/AD1616/flask_portfolio/issues/51)
+### - [Incorporate Minilab Technicals into PBL Design](https://github.com/AD1616/flask_portfolio/issues/48)
+
+| Member | Job | Ticket |
+| - | - | - |
+| Sahil | Sahil is working on creating rice suggestions and rice quiz this week. | [Ticket for Rice Suggestions](https://github.com/AD1616/flask_portfolio/issues/56), [Ticket for Rice Quiz](https://github.com/AD1616/flask_portfolio/issues/52)|
+| Erik | Erik is working on rice quiz and rice information page this week. | [Ticket for Rice Quiz](https://github.com/AD1616/flask_portfolio/issues/52), [Ticket for Rice Information page](https://github.com/AD1616/flask_portfolio/issues/53) |
+| Isaac | Isaac is working on the rice information page this week. | [Ticket for Rice Information page](https://github.com/AD1616/flask_portfolio/issues/53)|
+| Yash |Yash is working on the Rice Suggestions page and creating a scavenger hunt this week. | [Ticket for Rice Suggestions](https://github.com/AD1616/flask_portfolio/issues/56), [Ticket for Scavenger hunt](https://github.com/AD1616/flask_portfolio/issues/54) |
 
 # Sprint 7,8 Week 7
 ## Links to issues for this week
@@ -18,6 +33,8 @@
 | Yash |Yash is working on unsigned addition and logic gates this week. | [Ticket for unsigned addition](https://github.com/AD1616/flask_portfolio/issues/35), [Ticket for logic gates](https://github.com/AD1616/flask_portfolio/issues/36) |
 
 ## [Runtime Video for this week](https://www.youtube.com/watch?v=VWZpLjm3h34)
+### [TT7 Activity](https://github.com/AD1616/flask_portfolio/blob/main/templates/tt7Activity1.py)
+### [TT7 Notes](https://docs.google.com/document/d/1LZ9xvFUnjqGjdHqfzBByb52CB4-5WtT8ud-7c6lKU5w/edit)
 #### Summary: I(Sahil) finished color codes and signed addition this week. Erik finished logic gates and unicode. Yash finished unsigned addition and helped with logic gates a bit. Isaac finished the multiplying and dividing by 2 shift. We  all did Unit 3.5 and 3.6 notes and completed both quizzes.
 
 # Sprint 5,6 Week 6
