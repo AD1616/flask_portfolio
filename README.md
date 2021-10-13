@@ -129,3 +129,5 @@ Each name has a link to their mini-lab page for greet integration.
 
 ### Project Ideation
 - We have planned to stick with [this](https://docs.google.com/drawings/d/1blPXDeaPubER-gAHyGBngrtxeN-vLiY5WKN-2aqO8-Q/edit) idea for now.
+
+JOE BIDEN
