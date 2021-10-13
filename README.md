@@ -9,9 +9,9 @@
 
 # Sprint 7,8 Week 8
 ## Links to issues for this week
-### - [Unit 3.7 work]
-### - [Unit 3.8 work]
-### - [Journal solution to RGB and Logic Gate and mapping of labs to CB work]
+### - [Unit 3.7 work](https://github.com/AD1616/flask_portfolio/issues/49)
+### - [Unit 3.8 work](https://github.com/AD1616/flask_portfolio/issues/50)
+### - [Journal solution to RGB and Logic Gate and mapping of labs to CB work](https://github.com/AD1616/flask_portfolio/issues/51)
 | Member | Job | Ticket |
 | - | - | - |
 | Sahil | Sahil is working on creating rice suggestions and rice quiz this week. | [Ticket for Rice Suggestions](https://github.com/AD1616/flask_portfolio/issues/56), [Ticket for Rice Quiz](https://github.com/AD1616/flask_portfolio/issues/52)|
