@@ -1,4 +1,5 @@
 # Team Pigeon Chest
+## Our project will be all about rice. We will have information about rice, fun activities with rice, and of course things relating to eating and making rice.
 ## [Journal](https://drive.google.com/drive/u/1/folders/1n59WRVuWyoP48XkWbADahArmkUwvozFe)
 | Name | Github Profile | Tasks | Scrum Board | Commit History |
 | - | - | - | - | - |
